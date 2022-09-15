@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcessibilidadeWeb</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/contrast.css" />
+  <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+
+
+  <!-- nav -->
+  <header class="header">
+
+    <nav class="container1">
+
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#about">Ir para conteudo (1)</a></li>
+          <li><a class="title" href="#container">Ir para menu (2)</a></li>
+          <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+          <li><a class="title" href="#footer">Ir para rodape (4)</a></li>
+
+        </ul>
+      </div>
+
+
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+          <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+          <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+              onkeydown="window.toggleContrast()">Alto Contraste [Alt + 3]</a></li>         
+          <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+          <select id="fontSize">
+            <option value="1.5rem" selected>A[ + ]</option>
+            <option value="1.0rem">A[ . ]</option>
+            <option value="0.5rem">A[ - ]</option>
+          </select>
+
+
+        </ul>
+      </div>
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+
+    <div class="divider-1"></div>
+
+
+    <nav class="container" id="container">
+      <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="padroes.html">Padrões Web</a></li>
+          <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+          <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+          <li><a class="title" href="contacto.html">Contato</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+    <div class="divider-1"></div>
+  </header>
+
+
+
+
+  <main>
+
+    <div class="deque-tabpanel" id="carousel">
+
+      <ul class="deque-tabpanel-tablist" role="tablist">
+        <li class="deque-tabpanel-tab" role="tab" id="tabCitySkyline" aria-controls="panelCitySkyline">
+          Horizonte da cidade
+        </li>
+        <li class="deque-tabpanel-tab" role="tab" id="tabSunset" aria-controls="panelSunset">
+          Pôr do sol na praia
+        </li>
+        <li class="deque-tabpanel-tab" role="tab" id="tabRomanBuilding" aria-controls="panelRomanBuilding">
+          Estátua Romana
+        </li>
+      </ul>
+      <div class="deque-tabpanel-tabpanels">
+        <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelCitySkyline" aria-labelledby="tabCitySkyline">
+          <img id="imgCitySkyline" src="imagens/tempimage01.jpeg" alt="City skyline">
+        </div>
+        <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelSunset" aria-labelledby="tabSunset">
+          <img id="imgSunset" src="imagens/tempimage02.jpeg" alt="Sunset over lake">
+        </div>
+        <div class="deque-tabpanel-tabpanel" role="tabpanel" id="panelRomanBuilding" aria-labelledby="tabRomanBuilding">
+          <img id="imgRomanBuilding" src="imagens/tempimage03.jpeg" alt="Old roman building with statue on top.">
+        </div>
+      </div>
+
+      <div class="deque-tabpanel-button-bar">
+        <button class="deque-button" id="prevButton">
+          Anterior
+        </button>
+        <button class="deque-button" id="playButton">
+          Iniciar
+        </button>
+        <button class="deque-button" id="pauseButton">
+          Parar
+        </button>
+        <button class="deque-button" id="nextButton">
+          Próximo
+        </button>
+      </div>
+
+    </div>
+
+    <div class="divider-1"></div>
+
+    <section class="section" id="about">
+      <div class="container grid">
+
+        <figure id="videoContainer" data-fullscreen="false">
+          <img src="imagens/istockphoto-869371124-1024x1024-transformed-transformed.jpeg"
+              alt="Atendimento educacional especializado com uso de prancha.">
+        
+      </figure>
+
+        <div class="text" id="paragrafo">
+          <h2 class="title">Sobre Mim</h2>
+          <p>
+            Web designer e programador, graduado em Tecnologias de informação Pela Universidade Eduardo Mondlane.</p>
+            <p>Estudo programação desde 2010, já fiz alguns cursos técnicos e
+            diversos cursos online. Estou sempre estudando e adquirindo cada vez mais conhecimento e experiências.
+          </p>
+
+          <p>
+            Possuo um bom conhecimento em programação, mas com o foco voltado mais para Web, me especializei em PHP,
+            conhecendo diversos Frameworks como  CakePHP  entre outros.
+            Também possuo conhecimentos em arquitetura e padrões de software, bem como metodologia ágeis.
+            Além disso sempre fui um entusiasta da parte estética, sempre buscando um layout bonito, limpo, e agradável.
+          </p>
+
+          <p>
+            Já estudei e obtive várias dicas de pessoas com algum tipo de deficiência física ou motora sobre
+            acessibilidade Web, e acho isso muito importante para a busca da web única e acessível a todos. Todos
+            possuem o direito de navegar na web, e basta nós programadores contribuir. Apenas fazendo um site com os
+            padrões e normas corretos já ajudaremos muitas pessoas.
+          </p>
+
+          <p>
+            Sou, uma pessoa simples, sempre em busca de como melhorar como pessoa. Não sei de tudo, mas o que sei já
+            posso passar para frente e ajudar muitas pessoas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-2"></div>
+
+    <!--     <section class="section" id="services">
+      <div class="container grid">
+        <header>
+          <h2 class="title">Artigos</h2>
+          <p class="subtitle">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            ea facere nemo laudantium delectus a ipsum incidunt, quia deleniti
+            ipsa inventore reprehenderit ab, non voluptatibus at neque,
+            aliquam vitae autem?
+          </p>
+        </header>
+        <div class="cards grid">
+          <div class="card">
+            <i class="icon-cosmetic"></i>
+            <h3 class="title">Nivel</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+              sunt dolore numquam dicta dignissimos? Consectetur natus ex
+              alias il
+            </p>
+          </div>
+          <div class="card">
+            <i class="icon-trim"></i>
+            <h3 class="title">Elo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur necessitatibus laboriosam amet totam quis et
+            </p>
+          </div>
+          <div class="card">
+            <i class="icon-mail"></i>
+            <h3 class="title">Conta</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptates impedit, sed fugit porro aperiam omnis labore
+              temporibus hic
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--  <div class="divider-1"></div>
+ <section class="section" id="multimidia">
+
+      <div class="container grid">
+
+        <figure id="videoContainer" data-fullscreen="false">
+          <video id="video" controls preload="metadata">
+
+            <source src="video/videoplayback_Trim_Trim.mp4" type="video/mp4">
+
+            <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/legenda.pt.vtt" default>
+            <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/legenda.pt.vtt">
+            <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt">
+          </video>
+          <figcaption>
+ 
+          </figcaption>
+        </figure>
+     
+
+        <div class="text">
+          <h2 class="title">Minuto educação</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A autem
+            aspernatur, alias sequi rerum tempora, nemo saepe dicta ex
+            explicabo labore accusamus non voluptatem ipsum? Libero pariatur
+            quo sunt ducimus.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+            deleniti totam facilis corporis delectus dolores mollitia rem
+            commodi, ducimus cum. Molestias perferendis dignissimos qui. At
+            dignissimos rerum iusto commodi temporibus.
+          </p>
+          <br />
+
+        </div>
+      </div>
+    </section> 
+
+    <div class="divider-2"></div> -->
+
+    <!--    <section class="section" id="contact">
+      <div class="container grid">
+
+        <div class="text">
+          <h2 class="title">Entre em contato</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+            pariatur ex quaerat omnis eligendi? Unde aspernatur, earum cum
+            impedit itaque eos, incidunt nulla, voluptas corporis doloremque
+            saepe odio accusantium placeat!
+          </p>
+          <a href="#" class="button"><i class="icon-whatsapp"></i>Entre em contato</a>
+        </div>
+
+        <div class="links">
+          <ul class="grid">
+            <li><i class="icon-phone"></i>(00)00000-0000</li>
+            <li><i class="icon-mail"></i>exemplo@email.com</li>
+          </ul>
+        </div>
+
+      </div>
+    </section> -->
+
+    <div class="divider-2"></div>
+  </main>
+
+
+  <footer class="section" id="footer">
+
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+        <p>Site Construido usando Acessibilidade.</p>
+        <p>Todos os direitos reservados</p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+  <script src="js/scrollreveal.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/controle_tamanho.js"></script>
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/libras.js"></script>
+  <script src="js/event.js"></script>
+
+
+  <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+  <script type="text/javascript" src="js/high-contrast.js"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

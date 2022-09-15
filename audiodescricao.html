@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+
+    <link rel="stylesheet" href="css/audiodescricao.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                    <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                    <select id="fontSize">
+                        <option value="1.5rem" selected>A[ + ]</option>
+                        <option value="1.0rem">A[ . ]</option>
+                        <option value="0.5rem">A[ - ]</option>
+                    </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>Audiodescrição</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="padroes.html">Padrões Web</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Audiodescrição em vídeos pré-gravado.</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Oferecer audiodescrição para vídeo pré-gravado</h2>
+                <p>
+                    A audiodescrição permite que o usuário receba a informação contida na imagem ao mesmo tempo em que
+                    esta aparece, possibilitando que a pessoa desfrute integralmente da obra, seguindo a trama e
+                    captando a subjetividade da narrativa, da mesma forma que alguém que enxerga.
+                </p>
+                <p>
+                    O recurso consiste na descrição clara e objetiva de todas as informações que compreendemos
+                    visualmente e que não estão contidas nos diálogos, como, por exemplo, expressões faciais e corporais
+                    que comuniquem algo, informações sobre o ambiente, figurinos, efeitos especiais, mudanças de tempo e
+                    espaço, além da leitura de créditos, títulos e qualquer informação escrita na tela.
+
+                </p>
+                <p>
+                    As descrições acontecem nos espaços entre os diálogos e nas pausas entre as informações sonoras do
+                    filme ou espetáculo, nunca se sobrepondo ao conteúdo sonoro relevante, de forma que a informação
+                    audiodescrita se harmoniza com os sons do filme.
+                </p>
+
+                <figure id="videoContainer" data-fullscreen="false">
+                    <video id="video" controls preload="metadata">
+
+                        <source src="video/audiodescricao.mp4" type="video/mp4">
+
+                        <track label="English" kind="subtitles" srclang="en" src="subtitles/vtt/legenda.pt.vtt" default>
+                        <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/legenda.pt.vtt">
+                        <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt">
+                    </video>
+                    <figcaption id="figcaption">
+                        No video temos uma animação apresentando um Navio em movimento e seus tripulantes,no video
+                        temos uma versão com audiodescrição. O narrador da audiodescrição descreve a navegacao do
+                        navio,a
+                        influencia do vento,
+                        da dificuldades que o personagem <strong>Puper</strong> tem em levar um barril do porao de
+                        cargas
+                        ate ao topo do navio e ainda nos apresenta outros personagens como o macaco
+                        <strong>tite</strong>, e <strong>selck</strong>
+                    </figcaption>
+                </figure>
+
+
+                
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+                <p>Site Construido usando Acessibilidade.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+    <script type="text/javascript" src="js/controleImagens.js"></script>
+    <script src="js/event.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

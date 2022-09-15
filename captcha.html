@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/perguntas.css" />
+
+
+    <link rel="stylesheet" href="css/captcha.css" />
+
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste
+                            [Alt + 3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <h1>Fornecer estratégias de segurança específicas ao invés de CAPTCHA</h1>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="padroes.html">Padrões Web</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Fornecer estratégias de segurança específicas ao invés de
+                                CAPTCHA</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+
+                <p id="primeiro">
+                    CAPTCHAs são utilizados para impedir que softwares automatizados, conhecidos como bots, executem
+                    ações que degradem a qualidade do serviço de um sistema, provocando danos em áreas e e-serviços de
+                    sítios em um curto espaço de tempo, podendo sobrecarregar servidores e deixar sítios indisponíveis
+                    por um dado período.
+                </p>
+
+
+                <figure id="imageContainer" data-fullscreen="false">
+                    <img src="imagens/captcha.png" alt="Exemplo de CAPTCHA com letras distorcidas">
+                    <figcaption id="figcaption">
+                        Exemplo de CAPTCHA com letras distorcidas
+                    </figcaption>
+                </figure>
+
+
+
+                <div class="text" id="about">
+                    <h2>Recomenda-se uma combinação de diferentes estratégias para serviços mais seguros e acessíveis
+                        para substituir o uso de CAPTCHA, como por exemplo:</h2>
+                    <ul>
+                        <ul>
+                            <li>Limites de conexão;</li>
+                            <li>Monitoramento;</li>
+                            <li>Consistência nas políticas de segurança;</li>
+                            <li>Uso de técnicas de desenvolvimento de serviços e formulários seguros.</li>
+                            <li>Tal recomendação se deve ao fato de que o uso de CAPTCHA pode ocasionar problemas
+                                significativos
+                                a sítios e formulários:</li>
+                            <li>Usabilidade: O ônus de detecção de problemas e invasões é delegado a pessoa, ao
+                                invés do
+                                sistema. Como CAPTCHAs são projetados para serem difíceis de ler e entender, tornam
+                                os
+                                serviços
+                                que os utilizam muito mais difíceis de usar.</li>
+                            <li>Acessibilidade: Os CAPTCHAS são inacessíveis por sua natureza, não são lidos, nem
+                                interpretados
+                                por leitores de tela. Isso efetivamente torna o serviço inutilizável por alguns
+                                grupos
+                                de
+                                pessoas. Mesmo CAPTCHAs que oferecem versões em áudio não resolvem completamente o
+                                problema,
+                                pois muitas pessoas podem possuir deficiência auditiva e visual.</li>
+
+                            <li>Segurança: Desenvolver um CAPTCHA internamente costuma gerar CAPTCHAS inseguros, com
+                                falhas já
+                                mapeadas por spammers. No entanto, ao utilizar CAPTCHAS de terceiros há outros
+                                problemas
+                                a serem
+                                considerados:</li>
+                            <li>1. Privacidade: O serviço de CAPTCHA pode incluir cookies, coletar estatísticas e
+                                mapear
+                                o
+                                comportamento de navegação das pessoas que acessam o serviço. Isto introduz
+                                preocupações
+                                com a
+                                privacidade significativas.</li>
+                            <li>2. Performance: O uso de um serviço CAPTCHA incorre no desempenho do sítio. Se o
+                                serviço
+                                ficar
+                                indisponível, o mesmo acontece com o acesso ao serviço da página que utiliza o
+                                CAPTCHA.
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <p>Caso o uso de CAPTCHA seja estritamente necessário, o mesmo deverá ser fornecido em forma de pergunta
+                    simples de interpretação (CAPTCHA Humano), e este preferencialmente só deverá ser apresentado após
+                    pelo menos 2 tentativas de envio do formulário, por exemplo. Tais perguntas poderão ser respondidas
+                    apenas por um ser humano. No entanto, é preciso garantir que a pergunta não seja de difícil
+                    resolução, permitindo que a mesma possa ser respondida por pessoas de variadas culturas e níveis de
+                    instrução. </p>
+                <p>Para tal, podem ser utilizadas perguntas de senso comum, como por exemplo, “qual é a cor do céu?” ou
+                    “o fogo é quente ou frio?”.</p>
+
+                <p>Também podem ser utilizados testes matemáticos. No entanto, é preciso tomar cuidado para que esses
+                    testes não sejam facilmente “quebrados” por determinados programas.</p>
+                <p>Uma alternativa é solicitar que o usuário escreva o resultado do teste matemático por extenso, como
+                    “escreva por extenso quanto é 2 + 3”, ou ainda “responda por extenso quanto é dois mais três”.</p>
+
+            </div>
+
+            <h2>Exemplo de CAPTCHA</h2>
+
+            
+            <form action="action.php" method="post">
+                <fieldset>
+                    <legend>CAPTCHA</legend>
+
+                    <label for="pergunta">Escreva por extenso quanto é dois mais três.</label>
+                    <input type="text" id="pergunta" name="pergunta" min="1" required>
+
+                    <input type="submit" id="enviar" name="enviar" value="Enviar!">
+                    <label class="personalgreeting">Captcha:</label>
+                </fieldset>
+
+                
+            </form>
+         
+            
+          
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+                <p>Site Construido usando Acessibilidade.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/captcha.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

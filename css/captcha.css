@@ -1,0 +1,135 @@
+#figcaption{
+    display: block; 
+
+ 
+    margin-left: 10px;
+
+   
+}
+
+#imageContainer{
+ 
+    font-size: 1.0em;
+    margin-left: 300px;
+
+    min-height: 360px;
+    width: 30%;
+
+    display: grid;
+    margin-top: 20px;
+    margin-top: 40px;
+
+    /*add columns*/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+   
+    grid-template-areas:
+        "video"
+        "figcaption"
+       
+}
+
+h1 {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 1.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  h2 {
+    display: block;
+    font-size: 1.7em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+ 
+
+
+#links li{
+    list-style:none;
+    
+    margin-bottom: 0.5em; 
+    font-size: 1.0em;
+
+  }
+ 
+  p{
+    margin-bottom: 1.0em;
+    margin-top: 1.0em;
+
+    text-indent: 3ch;
+  }
+
+  #primeiro{
+    margin-top: -50px;
+  }
+
+  .container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .breadcrumb ul {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+ 
+}
+
+
+
+
+.breadcrumb a,
+.breadcrumb span {
+    padding: 1.1em 0.5em;
+}
+
+.breadcrumb li::before {
+    content: "→";
+  
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+}
+
+
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+    min-height: 60px;
+    width: 33%;
+    padding-top: 20px;
+
+  }
+
+  label{
+   /*  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ; */
+    width: 100% !important;
+    margin: 10px !important;
+    font-size: 14px !important;
+  
+  }
+
+  input{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    width: 90%;
+    padding: 5px;
+    margin: 10px;
+  }
+

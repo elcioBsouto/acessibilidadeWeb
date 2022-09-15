@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+  
+    <link rel="stylesheet" href="css/navegador.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+  
+  
+  
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+  
+  </head>
+
+<body>
+
+  <header class="header">
+
+    <nav class="container1">
+
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+          <li><a class="title" href="#services">Ir para menu (2)</a></li>
+          <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+          <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+          <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+          <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+              onkeydown="window.toggleContrast()">Alto Contraste [Alt + 3]</a></li>
+              <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+              <select id="fontSize">
+                <option value="1.5rem" selected>A[ + ]</option>
+                <option value="1.0rem">A[ . ]</option>
+                <option value="0.5rem">A[ - ]</option>
+              </select>
+
+        </ul>
+      </div>
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+
+    <div class="divider-1"></div>
+
+
+    <nav class="container">
+      <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="padroes.html">Padrões Web</a></li>
+          <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+          <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+          <li><a class="title" href="contacto.html">Contato</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+    <div class="divider-1"></div>
+  </header>
+
+
+  <main>
+
+    <div class="container grid">
+      <div class="text" id="about">
+
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <h1>Zac Browser: Navegador para Autistas.</h1>
+          <ul id="links">
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+            <!--   <li><a href="">Sub-Category</a></li> -->
+            <li><span aria-current="page">Zac Browser: Navegador para Autistas</span></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div>
+        <h2 id="irprimeiroconteudo">Avô cria navegador de internet para neto autista.</h2>
+        <p>
+          Programa bloqueia conteúdo impróprio e destaca material infantil.
+          Ícones na tela são maiores que os tradicionais, facilitando a navegação.
+
+        </p>
+        <p>
+          John LeSieur trabalha com software e achou curioso o fato de os computadores parecerem inúteis para
+          seu
+          neto de seis anos, Zackary. O garoto tem autismo e tudo o que era apresentado pelo PC o confundia a
+          ponto
+          de ele jogar o mouse, como sinal de frustração.
+
+        </p>
+        <p>
+          LeSieur tentou encontrar ferramentas na internet que pudessem guiar seu neto pela web, mas não achou
+          nada satisfatório.
+          Foi então que ele decidiu criar um navegador, chamado Zac Browser For Autistic Children, em
+          homenagem a Zackary.
+        </p>
+
+        <h2 id="irsegundoconteudo">O Zac Browser.</h2>
+
+        <figure id="imageContainer" data-fullscreen="false">
+          <img src="imagens/zac1.jpg" alt="Na imagem temmos um menino mexendo altista com o  navegador zac browser ">
+
+          <figcaption><strong>Em sua casa em Québec, no Canadá, Zackary Villeneuve, de 6 anos de idade,
+              utiliza o navegador Zac, desenvolvido especialmente por seu avô</strong></figcaption>
+        </figure>
+
+
+        <p>
+          O navegador simplifica a experiência de usar um computador. Ele bloqueia conteúdo violento,
+          pornográfico ou inadequado para crianças, enquanto dá ênfase a games educacionais, vídeos, música e
+          imagens de entretenimento (como um aquário), disponíveis em páginas de conteúdo gratuito.
+          A idéia é reduzir o controle de crianças como Zackary, que se confundem quando encontram muitas
+          escolhas.
+
+        </p>
+        <p>
+          O browser também desabilita itens "desnecessários" do teclado, como "Print Screen", e inutiliza o
+          botão direito do mouse. Isso elimina
+          comandos que as crianças geralmente não precisam e também reduz as chances de criar insegurança
+          entre os autistas.
+
+        </p>
+        <p>
+          Os usuários do Zac Browser selecionam atividades usando ícones maiores que os tradicionais. O
+          programa também é configurado para que não exiba anúncios ou outras imagens que possam distrair.
+          "Tentamos evitar sites complicados ou agressivos, porque o importante na navegação é a auto-estima.
+          Se a situação não estiver sob controle, os internautas ficam facilmente frustrados", diz LeSieur.
+          A ferramenta está disponível gratuitamente em: www.zacbrowser.com <strong>(Link da acesso a Site
+            Externo)</strong>
+        </p>
+
+        <h2 id="irterceiroconteudo">Autismo e Zackary.</h2>
+        <p>
+          Geralmente o autismo afeta a habilidade de comunicação das pessoas e Zackary não fala muito. Mas sua
+          mãe, Emmanuelle Villeneuve, disse que o filho navega sozinho usando o browser especial. Ele ouve
+          música e monta quebra-cabeças -- atividades que ele já gostava no universo off-line, mas que não
+          conseguia realizar on-line. Além disso,
+          enquanto o garoto tem reações negativas contra a TV, ele não se manifesta da mesma maneira em
+          relação ao computador.
+
+        </p>
+
+
+      </div>
+
+
+
+    </div>
+  </main>
+
+
+  <footer class="section">
+
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+        <p>Site Construido usando Acessibilidade.</p>
+        <p>Todos os direitos reservados</p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+  <script src="js/scrollreveal.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/controle_tamanho.js"></script>
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/event.js"></script>
+
+  <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+  <script type="text/javascript" src="js/high-contrast.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

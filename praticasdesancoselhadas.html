@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/perguntas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+                <h1>Práticas desaconselhadas</h1>
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="#irprimeiroconteudo" accesskey="1">Arquivos excessivamente grandes;</a>
+                        </li>
+                        <li>
+                            <a href="#irsegundoconteudo" accesskey="2">Imagens não otimizadas;</a>
+                        </li>
+                        <li>
+                            <a href="#irterceiroconteudo" accesskey="3">Sons não solicitados;</a>
+                        </li>
+                        <li>
+                            <a href="#irquartoconteudo" accesskey="4">Publicação de textos usando tecnologias
+                                inadequadas: Flash, Javascript, Java ou imagens;</a>
+                        </li>
+                        <li>
+                            <a href="#irquintoconteudo" accesskey="5">Navegação confusa.</a>
+                        </li>
+                        <li>
+                            <a href="#irsextoconteudo" accesskey="6">Textos muito longos;
+                                Exigência da instalação de software adicional; </a>
+                        </li>
+
+                        <li>
+                            <a href="#irsetimoconteudo" accesskey="7">Exigência da instalação de software adicional.</a>
+                        </li>
+                        <li>
+                            <a href="#iroitavoconteudo" accesskey="8">Pesquisas internas inoperantes no site.</a>
+                        </li>
+                        <li>
+                            <a href="#irnonoconteudo" accesskey="9">Ausência de informação de contato.</a>
+                        </li>
+                        <li>
+                            <a href="#irdecimoconteudo" accesskey="10">Janelas que aparecem em cima dos textos;</a>
+                        </li>
+                        <li>
+                            <a href="#irdecimocoprimeiro" accesskey="11">Efeito Las Vegas.</a>
+                        </li>
+                        <li>
+                            <a href="#irdecimosegundo" accesskey="12">Uso excessivo de animações.</a>
+                        </li>
+                        <li>
+                            <a href="#irdecimoterceiro" accesskey="12">Navegação confusa.</a>
+                        </li>
+
+
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Arquivos excessivamente grandes.</h2>
+                <p>
+                    Uma página muito grande demorará muito tempo a ser carregada. Embora no seu PC ou rede local a
+                    página apareça imediatamente, um usuário que esteja a usar uma ligação lenta à Internet ficará muito
+                    tempo à espera de conseguir vê-la e muito provavelmente acabará por desistir saltando para uma
+                    página alternativa.
+
+                </p>
+                <p>
+                    Grande parte dos usuários da web possuem ligações lentas. A sua página web pode ser acedida em
+                    qualquer parte do mundo, mas não poderá ser acedida em qualquer parte do mundo à mesma velocidade.
+                </p>
+                <p>
+                    Independentemente da velocidade anunciada pelo ISP, em redes congestionadas a velocidade de download
+                    poderá também ser bastante lenta.
+                </p>
+                <p>Antevê-se a curto prazo que o acesso à web seja feito principalmente através de dispositivos móveis.
+                    No entanto, as comunicações móveis (GPRS, WAP) são muito mais lentas do que as fixas. Além disso, um
+                    arquivo muito grande poderá ser impossível de se apresentar na tela de um dispositivo de pequenas
+                    dimensões, como um celular.</p>
+                <p>Uma página deverá ter o menor tamanho possível. O tamanho da página incluindo todos os objetos não
+                    deverá exceder os 100 KB. Caso necessite de publicar arquivos grandes, apresente sempre o tamanho
+                    nos links que os referem para que o usuário possa decidir se deve descarregá-los consoante as
+                    condições de acesso que tem ao seu dispor.</p>
+
+                <h2 id="irsegundoconteudo">Imagens não otimizadas.</h2>
+                <p>
+                    As imagens deverão ser o menor possível e também deverão ter exatamente o tamanho que irão ocupar na
+                    página.
+
+                </p>
+                <p>
+                    O tamanho de uma imagem nunca deverá ser redimensionado usando os atributos width e height. Estes
+                    servem para indicar ao browser o tamanho exato da imagem de modo a que este possa mostrá-la mais
+                    rapidamente. Se necessitar de publicar uma imagem grande ou de alta resolução apresente em primeiro
+                    lugar uma miniatura da imagem, dando a opção ao utilizador de ver a imagem grande se o desejar.
+                </p>
+
+
+                <h2 id="irterceiroconteudo">Sons não solicitados.</h2>
+                <p>
+                    Pôr uma musiquinha de fundo ou outros sons não solicitados na sua página pode revelar-se um grande
+                    tiro no pé. Uma música com uma qualidade razoável será um arquivo grande que terá de ser
+                    descarregado juntamente com a sua página, o que poderá causar problemas de acesso.
+                </p>
+                <p>
+                    Os usuários estão mais interessados em ler a informação contida na sua página do que em ouvir a
+                    música de fundo. Dê a opção de ligar a música de fundo depois do usuário ter carregado a página.
+                    Ficará espantado em verificar que poucos usuários o farão.
+
+                </p>
+                <p>
+                    Existem webmasters que colocam uma musica de fundo extremamente simples que é repetida
+                    incessantemente, para evitar o download de um grande arquivo. Neste caso, passados alguns minutos a
+                    ouvir a mesma ladainha, os leitores da sua página sentir-se-ão convidados a abandoná-la, ou a cortar
+                    o som do computador, o que é uma imposição desagradável se uma pessoa estiver ouvindo os seus MP3s
+                    favoritos enquanto navega na web.
+                </p>
+                <p>
+                    A situação é mais grave quando os leitores abrem uma página no local de trabalho e inesperadamente
+                    sai uma música dos alto-falantes do computador quando o chefe está passando. A reação é imediata, o
+                    leitor fecha a página. Perdeu um leitor, quem sabe para sempre.
+
+                <h2 id="irquartoconteudo">Publicação de textos usando tecnologias inadequadas: Flash, Javascript, Java
+                    ou imagens.</h2>
+                <p>
+                    O texto publicado usando animações Flash, programas Java ou Javascript, ou imagens é invisível para
+                    os motores de busca. Assim sendo, as páginas que contenham esses textos dificilmente serão
+                    retornadas como resultados de pesquisas. As páginas que recebam links criados exclusivamente usando
+                    estas tecnologias também não serão encontradas pelos motores de busca.
+                </p>
+                <p>
+                    Além disso, a utilização destas tecnologias para publicação de textos coloca graves problemas de
+                    acessibilidade, uma vez que, por exemplo, não permitem que os utilizadores aumentem o tamanho das
+                    letras de uma página no browser para aumentar a legibilidade dos textos. Lembre-se que grande parte
+                    das pessoas que usam computadores frequentemente sofrem de problemas de visão.
+
+                </p>
+
+
+                <h2 id="irquintoconteudo">Navegação confusa.</h2>
+                <p>
+                    A navegação dentro de um site deve ser simples. Trabalhe num bom modelo de navegação e mantenha-o em
+                    todas as páginas do site. Deverá ser possível ao usuário identificar todos os links de uma página
+                    através da visualização da página sem efetuar qualquer ação.
+                </p>
+                <p>Os textos dos links, por si só, deverão dar uma idéia clara do conteúdo da página apontada. Nunca use
+                    textos nos links como "clique aqui", pois São ambíguos, desperdiçam espaço precioso na página e não
+                    ajudam na otimização das suas páginas para os motores de busca. Por exemplo em vez de: "Para nos
+                    contatar clique aqui.", porque não: "Contate-nos".</p>
+
+                <p>Um usuário deverá ter sempre consciência da sua localização no site e das opções que tem disponíveis
+                    para continuar a sua navegação. Não confunda os usuários com inúmeras escolhas para realizar a mesma
+                    ação. Apresente um link para cada página e diferencie as páginas visitadas das não visitadas. A
+                    utilização de drop-boxes dificulta a memorização dos caminhos que os usuários seguiram para chegar a
+                    uma página.</p>
+                <p>Mantenha todas as páginas importantes a uma distância máxima de 3 cliques da página de entrada.</p>
+
+                <p>Nunca use o sublinhado para destacar palavras numa página web porque os usuários confundem estes
+                    textos com links. É preferível recorrer ao negrito (bold) se pretender destacar um conjunto de
+                    palavras.</p>
+
+                <h2 id="irsextoconteudo">Textos muito longos.</h2>
+                <p>
+                    Um texto escrito para a web deverá ser curto, claro e sucinto. A leitura de um texto num monitor é
+                    muito mais cansativa do que numa folha de papel, pelo que deve ter o cuidado de não cansar o leitor
+                    para que ele não desista de ler a sua página antes de chegar ao fim.
+                </p>
+
+                <p>
+                    Se tiver um texto muito longo, divida-o em várias páginas, cada uma focando um tema em particular.
+                    Pode-se também criar links que permitam ao leitor saltar para a parte que mais lhe interessa no
+                    texto sem ter de ler tudo. É muito provável que a informação que o leitor procura esteja numa
+                    pequena parte do seu texto. Facilite-lhe a vida e ele voltará ao seu site.
+
+                </p>
+
+                <p>
+                    A utilização de equivalentes textuais para as imagens também é fundamental para que o leitor, em sua
+                    passagem,
+                    possa transmitir a importância do significado da imagem no contexto em que se encontra.
+                </p>
+
+                <p>
+                    Escreva utilizando uma linguagem cuidada mas acessível. Os termos que utilizar nos seus textos
+                    deverão ser os mesmos que os leitores utilizem para pesquisar nos motores de busca.
+                </p>
+
+
+
+                <h2 id="irsetimoconteudo">Exigência da instalação de software adicional.</h2>
+                <p>
+                    Algumas páginas exigem que o seus leitores instalem software adicional para as poderem visualizar,
+                    como por exemplo um leitor de Flash, uma máquina virtual Java ou até mesmo um novo browser. Este é
+                    um erro crasso. Muitas pessoas acedem à web no local de trabalho ou em cibercafés onde não lhes é
+                    possível efetuar tarefas administrativas como instalar software. Logo, não lhes é possível ver a sua
+                    página. Mesmo que um utilizador esteja no seu computador pessoal, a apresentação de uma mensagem
+                    como "Instale a JVM" poderá assustar usuários sem conhecimentos profundos de Informática e levá-los
+                    a abandonar o seu site temendo cometer algum erro ou serem vitimas de algum ataque.
+                </p>
+                <p>
+                    A instalação de software adicional deverá sempre ser uma opção e nunca privar o acesso à página caso
+                    não seja possível. No caso de um dispositivo móvel poderá nem existir uma versão do software que
+                    possa ser instalada e através de uma ligação lenta à Internet o tempo de download do software poderá
+                    ser proibitivo.
+                </p>
+                <p>
+                    Muitos webmasters validam as suas páginas simplesmente através da sua visualização num único
+                    browser. Se há alguns anos existia um domínio quase absoluto de um único browser, isso hoje já não
+                    acontece.
+                </p>
+                <h2 id=iroitavoconteudo>Pesquisas internas inoperantes no site.</h2>
+                <p>
+                    Os usuários da web cada vez mais navegam utilizando motores de busca. É frustrante quando tentam
+                    utilizar a caixa de pesquisa do seu site e esta não funciona. A impressão que passa é que o site
+                    está abandonado e que existe desleixo na sua manutenção, o que, caso se trate do site de uma
+                    empresa, dará uma má imagem.
+                </p>
+                <p>
+                    A maior parte dos motores de busca oferecem serviços gratuitos de pesquisa dentro de um site (ex.
+                    Google, FreeFind). Se a pesquisa interna dentro do seu site não funciona corretamente, será melhor
+                    retirá-la, a sua existência só fará os seus leitores perderem tempo, e ninguém gosta de perder
+                    tempo.
+                </p>
+
+                <h2 id="irnonoconteudo">Ausência de informação de contato.</h2>
+                <p>
+                    Por mais completo e atualizado que o seu site esteja, existirão sempre questões para as quais ele
+                    não contem resposta. É imprescindível que o seu site disponibilize informação de contato. Atenção,
+                    nunca coloque o seu endereço de e-mail numa página uma vez que este será recolhido pelos crawlers
+                    dos spammers e passado pouco tempo terá a sua caixa de correio cheio de lixo. Em alternativa,
+                    utilize um formulário de contato, com tecnologia PHP por exemplo, que esconderá o seu endereço de
+                    e-mail. Não se esqueça de proteger o diretório onde se encontra o script de PHP, a maneira mais
+                    simples de o fazer é criando no diretório um arquivo vazio index.html.
+
+                </p>
+                <p>
+                    As questões colocadas pelos usuários do seu site são extremamente valiosas, porque permitem
+                    identificar novas informações a serem incluídas na próxima atualização do seu site. Cada questão que
+                    está respondida no seu site, é menos uma que você tem de responder.
+                </p>
+
+                <h2 id="irdecimoconteudo">Janelas que aparecem em cima dos textos;</h2>
+                <p>
+                    As janelas que aparecem em cima do texto são supostamente para obrigar o usuário a ler o seu
+                    conteúdo. No entanto, muito rapidamente os utilizadores em vez de o lerem habituam-se rapidamente a
+                    procurar a localização do link para fechá-las rapidamente e prosseguirem com a sua leitura,
+                    ignorando completamente o seu conteúdo.
+
+                </p>
+                <p>
+                    O cérebro humano automaticamente identifica estas janelas como ruído que tem de ser eliminado para
+                    que consiga prosseguir com a sua tarefa. Um erro ainda maior é que estas janelas contêm
+                    frequentemente animações que demoram algum tempo até transmitirem a mensagem pretendida aos
+                    usuários. Ora, quase sempre o utilizador fecha a janela antes que isso aconteça.
+                </p>
+                <p>Se o utilizador não conseguir remover a janela que o impede de ler a informação que pretende na
+                    página, o mais provável é que termine a visita ao site e procure informação noutros lugares.</p>
+
+                <h2 id="irdecimoprimeiro">Efeito Las Vegas.</h2>
+                <p>
+                    Páginas com muitas cores confundem os usuários. Uma página deve conter no máximo 5 cores diferentes
+                    e estas devem ser usadas de forma coerente, por exemplo os links devem ter sempre a mesma cor assim
+                    como os textos.
+
+                </p>
+                <p>
+                    Não use imagens de fundo complexas porque irão diminuir a legibilidade dos textos. Certifique-se de
+                    que as cores usadas têm contraste suficiente para que possam ser lidos. A combinação de contraste
+                    ideal é letras pretas sobre um fundo branco (ou vice-versa).
+                </p>
+
+                <p>Utilize cores fortes como verde fluorescente ou vermelho apenas em caso de extrema necessidade, para
+                    dar ênfase a uma pequena parte de um texto. Estas cores são muito agressivas e a sua utilização
+                    freqüente cansa a visão dos leitores.</p>
+                <p>Não use imagens piscando para chamar a atenção dos leitores. Se fizer uma gestão racional das cores
+                    não serão necessárias animações para destacar partes importantes do seu texto.</p>
+
+                <h2 id="irdecimosegundo">Uso excessivo de animações.</h2>
+                <p>
+                    No máximo apresente uma animação por página. De preferência apresente as animações apenas se o
+                    usuário as solicitar. A utilização de várias animações com publicidade numa página com texto pode
+                    revelar-se um mau investimento.
+
+                </p>
+
+                <h2 id="irdecimoterceiro">Navegação confusa.</h2>
+                <p>
+                    A navegação dentro de um site deve ser simples. Trabalhe num bom modelo de navegação e mantenha-o em
+                    todas as páginas do site. Deverá ser possível ao usuário identificar todos os links de uma página
+                    através da visualização da página sem efetuar qualquer ação.
+
+                </p>
+
+                <p>Um usuário deverá ter sempre consciência da sua localização no site e das opções que tem disponíveis
+                    para continuar a sua navegação. Não confunda os usuários com inúmeras escolhas para realizar a mesma
+                    ação. Apresente um link para cada página e diferencie as páginas visitadas das não visitadas. A
+                    utilização de drop-boxes dificulta a memorização dos caminhos que os usuários seguiram para chegar a
+                    uma página.</p>
+
+                <p>Nunca use o sublinhado para destacar palavras numa página web porque os usuários confundem estes
+                    textos com links. É preferível recorrer ao negrito (bold) se pretender destacar um conjunto de
+                    palavras.</p>
+
+                <p>Mantenha todas as páginas importantes a uma distância máxima de 3 cliques da página de entrada.</p>
+
+                <p>Os textos dos links, por si só, deverão dar uma idéia clara do conteúdo da página apontada. Nunca use
+                    textos nos links como "clique aqui", pois São ambíguos, desperdiçam espaço precioso na página e não
+                    ajudam na otimização das suas páginas para os motores de busca. Por exemplo em vez de: "Para nos
+                    contatar clique aqui.", porque não: "Contate-nos".</p>
+
+
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+  }
+
+  #about li{
+    list-style:inside;
+    margin-left: 40px;
+    margin-bottom: 0.5em; 
+
+  }
+
+
+  #about a:hover, a:focus {
+      font-weight: bold;
+      border-bottom: 2px solid blue
+  }
+
+
+#links li{
+    list-style:none;
+    margin-left: 40px;
+    margin-bottom: 0.5em; 
+
+  }
+ 
+  p{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+
+    text-align: justify;
+  }
+
+  .container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    min-height: 360px;
+    width: 100%;
+    padding-top: 20px;
+
+  }
+
+  #formulario label{
+    display: grid;
+    grid-template-columns: 3fr 12fr;
+    grid-template-rows: auto ;
+    width: 100%;
+    margin: 10px;
+  
+  }
+
+  input{
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: auto ;
+    width: 98%;
+    padding: 5px;
+    margin: 10px;
+  }
+
+  textarea{
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    grid-template-rows: auto ;
+    width: 98%;
+    min-height: 150px;
+    padding: 5px;
+    margin: 10px;
+  }
+
+
+  

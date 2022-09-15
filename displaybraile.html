@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/assistivas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+   <!-- nav -->
+   <header class="header">
+
+    <nav class="container1">
+
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+          <li><a class="title" href="#services">Ir para menu (2)</a></li>
+          <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+          <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+          <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+          <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+              onkeydown="window.toggleContrast()">Alto Contraste [Alt + 3]</a></li>
+              <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+              <select id="fontSize">
+                <option value="1.5rem" selected>A[ + ]</option>
+                <option value="1.0rem">A[ . ]</option>
+                <option value="0.5rem">A[ - ]</option>
+              </select>
+
+        </ul>
+      </div>
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+
+    <div class="divider-1"></div>
+
+
+    <nav class="container">
+      <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="padroes.html">Padrões Web</a></li>
+          <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+          <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+          <li><a class="title" href="contacto.html">Contato</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+    <div class="divider-1"></div>
+  </header>
+
+    <nav class="container1">
+
+        <div class="menu">
+            <ul class="grid">
+                <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+            </ul>
+        </div>
+
+        <div class="menu">
+            <ul class="grid">
+
+                <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                        onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                        3]</a></li>
+                <li><a class="title" data-font-size="0.5rem">A[ + ]</a></li>
+                <li><a class="title" data-font-size="1.0rem">A[ . ]</a></li>
+                <li><a class="title" data-font-size="1.5rem">A[ - sssssss]</a></li>
+
+            </ul>
+        </div>
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+    </nav>
+
+    <div class="divider-1"></div>
+
+
+    <nav class="container">
+        <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+        <div class="menu">
+            <ul class="grid">
+
+                <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                <li><a class="title" href="contacto.html">Contato</a></li>
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+    </nav>
+    <div class="divider-1"></div>
+
+
+
+
+
+    </header>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>O que é um Display Braille?</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page"> que é um Display Braille?</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Leitor de Tela & Sintetizador de Voz & Display Braille.</h2>
+                <p>
+                    O leitor de tela é o meio tecnológico utilizado para suprir as dificuldades que as pessoas cegas têm
+                    na obtenção da informação que aparece no monitor. Através dele, o que aparece na tela é transformado
+                    em informação auditiva por meio de uma placa de som e sintetizador de voz, ou em informação tátil,
+                    quando se utiliza em conjunto com um Display Braille.
+
+                </p>
+                <p>
+                    O leitor de tela é um software que roda em background no computador do usuário, ou seja, fica em
+                    funcionamento enquanto outros programas são utilizados. Por meio de comandos no próprio teclado do
+                    computador, a pessoa com deficiência visual solicita ao programa que fale ou faça display de uma
+                    palavra, uma linha, uma letra, soletre ou mostre a palavra ou frase, leia toda a tela, leia o que
+                    está escrito em um botão, ícone, janela, lista, caixa combinada etc.
+
+                </p>
+                <p>
+                    No entanto, embora muitos usuários não saibam, o leitor de tela depende de um complemento, ou seja,
+                    de um sintetizador de voz ou de um Display Braille para transmitir a informação. Dessa forma,
+                    pode-se dizer que o leitor de tela é responsável por capturar no código, através dos comandos dados
+                    pelo usuário, as informações da tela, que são passadas ao sintetizador de voz, para serem faladas em
+                    voz quase humana, ou ao Display Braille, para que mostre o conteúdo em alto-relevo, podendo serem
+                    utilizados simuntaneamente.
+                </p>
+
+                <h2 id="irsegundoconteudo">Display Braille.</h2>
+
+                <figure>
+                    <img src="imagens/zac1.jpg"
+                        alt="Na imagem temmos um menino mexendo altista com o  navegador zac browser ">
+
+                    <figcaption>Em sua casa em Québec, no Canadá, Zackary Villeneuve, 6,
+                        utiliza o navegador Zac, desenvolvido especialmente por seu avô</figcaption>
+                </figure>
+
+                <p>
+                    A Linha Braille, ou Display Braille, é um hardware que exibe dinamicamente em Braille a informação
+                    da tela ligado a uma porta de saída do computador. Pode-se definir Display Braille como um
+                    dispositivo de saída tátil para visualização das letras no sistema Braille. Por intermédio de um
+                    sistema eletro-mecanico, conjuntos de pontos são levantados e abaixados, conseguindo-se assim uma
+                    linha de texto em Braille.
+
+                </p>
+                <p>
+                    Em geral, contam com diversos botões de função para controlar diretamente a navegação e, em muitos
+                    casos, executar comandos do leitor de tela ou do Windows. Existem linhas Braille tanto para
+                    computadores de mesa quanto para computadores de mão (PDA) e celulares, acopláveis ou embutidos a
+                    estes.
+                </p>
+                <p>
+                    Os atuais displays possuem dimensões que vão desde uma única célula (de seis ou oito pontos) até
+                    linhas de 80 células. A maioria comporta entre doze e vinte células por linha. É principalmente útil
+                    para a pessoa surdocega, que pode superar a ausência ou dificuldade de audição e visão através do
+                    tato. Infelizmente, é pouco usado no Brasil devido ao seu altíssimo custo - os mais simples e
+                    baratos ultrapassam os cinco mil dólares.
+                </p>
+
+                <h2 id="irterceiroconteudo">Linha Braille Focus 60 e 80.</h2>
+                <figure>
+                    <img src="imagens/zac1.jpg"
+                        alt="Na imagem temmos um menino mexendo altista com o  navegador zac browser ">
+
+                    <figcaption>Em sua casa em Québec, no Canadá, Zackary Villeneuve, 6,
+                        utiliza o navegador Zac, desenvolvido especialmente por seu avô</figcaption>
+                </figure>
+                <p>
+                    O mesmo fabricante do Jaws, a Freedom Cientific, fabrica também um excelente Display Braille, Linha
+                    Focus 40 ou 80, com muitas dessas características:
+
+                </p>
+                <ul id="links">
+                    <li>Detalhes para navegação projetados para evitar a necessidade de tirar as mãos da linha.</li>
+                    <li>Todos os botões podem ser individualmente configurados para criar teclas de atalho
+                        personalizadas.</li>
+                    <li>Teclas de função dupla dispostas dão acesso instantâneo a muitos comandos de Braille e do Jaws:
+                        ativar Braille contraído, alternar entre modos de exibição de linha ou estruturado, dar comandos
+                        de teclado como TAB, SHIFT+TAB, HOME e END.</li>
+                    <li>Conexão simples ao PC ou laptop via cabo USB ou Blutooth.</li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+                <p>Site Construido usando Acessibilidade.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+    <script src="js/event.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

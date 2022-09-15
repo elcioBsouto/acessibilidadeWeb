@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/assistivas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>Mouse Ocular- Piscar dos Olhos.</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Mouse Ocular- Piscar dos Olhos.</span></li>
+                    </ul>
+                </nav>
+
+
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Criação e Desenvolvimento.</h2>
+                <p>
+                    O Professor Manoel Cardoso, engenheiro eletrônico de Manaus (AM), criou o mouse ocular, solução que
+                    permite capturar e codificar os movimentos e as piscadas do globo ocular e transformá-los em sinais
+                    de comunicação.
+                    A idéia surgiu em 1996, inicialmente como um projeto da Universidade Federal do Amazonas.
+                </p>
+                <p>
+                    Depois de estudar o globo ocular e os sinais que movimentavam a íris, o professor criou uma solução
+                    que captura e codifica digitalmente os movimentos do globo, transformando-os em comandos de um
+                    software.
+                    Em 1999, o projeto foi assumido pela Fundação Desembargador Paulo Feitoza (AM),
+                    que investiu cerca de R$ 1 milhão somente na primeira fase do projeto.
+
+                </p>
+                <p>
+                    Entre as funcionalidades que o Mouse Ocular oferece, destaca-se a possibilidade de pessoas com
+                    tetraplegia, ausência ou alto grau de comprometimento dos membros superiores, possam utilizar
+                    plenamente um computador, através da digitação de palavras, frases ou textos, navegação na Web e
+                    utilização de qualquer software, usando somente piscados e movimentos oculares. O Mouse Ocular
+                    possibilita ainda a seus usuários, o aumento da sua autonomia, a reinserção no mercado de trabalho e
+                    o retorno aos estudos, proporcionando tanto a sua inclusão digital, quanto social. Sua aplicação é
+                    de fundamental importância na comunicação de pessoas com paralisias crônicas, advindas desde
+                    acidentes automobilísticos até distrofias musculares e doenças degenerativas congênitas,
+                    bem como em pós-operatório de pacientes com graves enfermidades.
+                </p>
+
+                <h2 id="irsegundoconteudo">Módulo de Controle</h2>
+
+                <p>
+                    O Mouse Ocular utiliza a técnica da Eletro-oculografia (EOG), para captura e detecção do movimento
+                    ocular pela medição da atividade elétrica associada ao movimento, utilizando-se de eletrodos ECG de
+                    baixo custo instalados próximo aos olhos. Existem diversas maneiras de medir o movimento ocular,
+                    algumas muito mais precisas que o EOG, mas estas são caras. A técnica por EOG é particularmente
+                    simples de coletar e analisar, mesmo com modesto equipamento. O objetivo principal é aproveitar
+                    a facilidade de uso desta técnica ocular (a precisão certeira no nível de pixel, porém, é a sua
+                    desvantagem).
+
+                </p>
+                <p>
+                    O modulo eletrônico é o coração do sistema. Ele tem dois canais para conexão ao usuário, um micro
+                    controlador (espécie de computador em escala reduzida), e um canal serial para conexão a um
+                    computador. O módulo captura através dos eletrodos os sinais criados pelo movimento dos olhos, tais
+                    como deslocamentos e piscados, e os converte em uma seqüência de dados que o programa no computador
+                    entende e os converte em comandos para execução. Tudo que é preciso para iniciar a exploração do
+                    módulo eletrônico é um computador PC ou compatível
+                    com uma conexão serial tipo RS-232, sistema operacional Windows e um software browser de Internet.
+
+                </p>
+
+
+                <h2 id="irterceiroconteudo">Esquema de Funcionamento.</h2>
+                <h3>Teclado Virtual.</h3>
+                <p>
+                    O teclado virtual é um simples programa de entrada de dados para Windows. Ele permite ao usuário
+                    entrar com texto em qualquer aplicação. É projetado para fácil utilização, pois a disposição das
+                    teclas (botões) segue o padrão encontrado na maioria dos teclados de computadores padrão PC.O
+                    computador recebe da porta serial os comandos de movimentos e clicks, traduzidos pelo módulo
+                    eletrônico, para orientar o cursor sobre o teclado virtual e selecionar teclas, respectivamente. O
+                    texto é formado quando o usuário seleciona as letras clicando nas teclas alfanuméricas do teclado,
+                    e transferido para qualquer aplicação usando o recurso Clipboard do Windows (copiar/colar).
+
+                </p>
+                <h3>Mouse Ocular.</h3>
+                <p>
+                    O mouse ocular é usado em volta dos olhos, sendo controlado por eles. Utiliza eletrônica e sensores
+                    tipo eletrodos para traduzir os movimentos e piscar dos olhos em movimento e click de cursor,
+                    respectivamente, de tal forma que pode ser utilizado praticamente em qualquer atividade que usa o
+                    mouse tradicional, inclusive na navegação na web. Conforme dados da FPF, existe alto grau de
+                    compatibilidade do mouse ocular com o mouse tradicional, isto é, movimento dos olhos correspondendo
+                    a movimento do cursor, e piscar dos olhos esquerdo e direito correspondendo aos clicados dos botões
+                    esquerdo e direito, respectivamente - e associada execução de funções na tela, ou seja, o usuário
+                    pode com apenas um deslocamento dos olhos para a esquerda, direita, acima ou abaixo, movimentar um
+                    cursor na tela do microcomputador e, ao atingir a posição desejada,
+                    pode efetuar com apenas um piscar de olhos, a seleção e execução de uma tarefa na internet.
+                </p>
+
+                <h2>Futuro do Mouse Ocular.</h2>
+                <p>
+                    A patente do Mouse Ocular pertence à Fundação Paulo Feitoza, que poderá licenciar a tecnologia aos
+                    fabricantes de equipamentos para fabricação em grande escala. A idéia é continuar aprimorando
+                    a solução com uso de tecnologias de inteligência artificial, processamento digital de imagens e
+                    robótica.
+                </p>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

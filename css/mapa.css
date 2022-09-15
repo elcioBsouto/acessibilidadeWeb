@@ -1,0 +1,42 @@
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 1.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+
+
+#links li{
+  list-style:none;
+  margin-left: 40px;
+  margin-bottom: 0.5em; 
+
+}
+
+#about .text {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+#about .text h1 {
+  margin-bottom: 1rem;
+}
+
+#about li {
+  list-style: inside;
+  margin-left: 40px;
+  margin-bottom: 0.5em;
+
+}
+
+
+#about a:hover,
+a:focus {
+  font-weight: bold;
+  border-bottom: 2px solid blue
+}

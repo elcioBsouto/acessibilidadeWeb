@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AcessibilidadeWeb</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contrast.css" />
+  <link rel="stylesheet" href="css/acessibilidade.css" />
+  <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+  <!-- nav -->
+  <header class="header">
+
+    <nav class="container1">
+
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+          <li><a class="title" href="#services">Ir para menu (2)</a></li>
+          <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+          <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+        </ul>
+      </div>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+          <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+          <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+              onkeydown="window.toggleContrast()">Alto Contraste [Alt + 3]</a></li>
+          <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+          <select id="fontSize">
+            <option value="1.5rem" selected>A[ + ]</option>
+            <option value="1.0rem">A[ . ]</option>
+            <option value="0.5rem">A[ - ]</option>
+          </select>
+
+
+        </ul>
+      </div>
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+
+    <div class="divider-1"></div>
+
+
+    <nav class="container">
+      <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+      <div class="menu">
+        <ul class="grid">
+
+          <li><a class="title" href="padroes.html">Padrões Web</a></li>
+          <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+          <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+          <li><a class="title" href="contacto.html">Contato</a></li>
+
+        </ul>
+
+
+      </div>
+
+
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
+    </nav>
+    <div class="divider-1"></div>
+  </header>
+
+
+
+
+  <main>
+
+    <div class="container grid">
+
+      <div class="text" id="about">
+        <h1 class="title">Esta Pagina,segue as diretrizes do e-MAG (Modelo de Acessibilidade)</h1>
+        <p>
+          O termo acessibilidade significa incluir a pessoa com deficiência na participação de atividades
+          como o uso de produtos, serviços e informações.
+          Alguns exemplos são os prédios com rampas de acesso para cadeira de rodas e banheiros adaptados
+          para deficientes.
+
+        </p>
+
+        <p>
+          Na internet, acessibilidade refere-se principalmente às recomendações do WCAG (World Content
+          Accessibility Guide) do W3C e o e-MAG (Modelo de Acessibilidade em Governo Eletrônico).
+          O e-MAG está alinhado as recomendações internacionais,
+          mas estabelece padrões de comportamento acessível para sites governamentais.
+        </p>
+
+        <p>
+          Na parte superior do portal existe uma barra de acessibilidade onde se encontra atalhos de
+          navegação padronizados e a opção para alterar o contraste.
+          Essas ferramentas estão disponíveis em todas as páginas do portal.
+        </p>
+
+
+        <h2>Os atalhos padrões são:</h2>
+
+        <ul>
+          <li>Teclando-se Alt + 1 em qualquer página do portal, chega-se diretamente ao começo do conteúdo
+            principal da página.</li>
+          <li>Teclando-se Alt + 2 em qualquer página do portal, chega-se diretamente ao início do menu
+            principal.</li>
+          <li>Teclando-se Alt + 3 em qualquer página do portal, chega-se diretamente em sua busca interna.
+          </li>
+          <li>Teclando-se Alt + 4 em qualquer página do portal, chega-se diretamente ao rodapé do site.
+          </li>
+        </ul>
+
+
+        <p>
+          Esses atalhos valem para o navegador Chrome, mas existem algumas variações para outros
+          navegadores.
+        </p>
+
+        <p>
+          Quem prefere utilizar o Internet Explorer é preciso apertar o botão Enter do seu teclado após
+          uma das combinações acima.
+          Portanto, para chegar ao campo de busca de interna é preciso pressionar Alt+3 e depois Enter.
+        </p>
+
+        <p>
+          No caso do Firefox, em vez de Alt + número, tecle simultaneamente Alt + Shift + número.
+        </p>
+
+
+
+        <p>
+          Sendo Firefox no Mac OS, em vez de Alt + Shift + número, tecle simultaneamente Ctrl + Alt +
+          número.
+        </p>
+
+
+        <p>
+          No Opera, as teclas são Shift + Escape + número.
+          Ao teclar apenas Shift + Escape, o usuário encontrará uma janela com todas as alternativas de
+          ACCESSKEY da página.
+        </p>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <footer class="section">
+
+    <div class="container grid">
+      <div class="brand">
+        <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+        <p>Site Construido usando Acessibilidade.</p>
+        <p>Todos os direitos reservados</p>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+  <script src="js/scrollreveal.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/controle_tamanho.js"></script>
+  <script type="text/javascript" src="js/cookie.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/event.js"></script>
+
+  <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+  <script type="text/javascript" src="js/high-contrast.js"></script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
+</html>

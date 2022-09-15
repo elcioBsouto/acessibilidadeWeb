@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/assistivas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste
+                            [Alt + 3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>NVDA: Leitor de Tela Livre para Windows.</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">NVDA: Leitor de Tela Livre para Windows</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+                <h1>Introdução.</h1>
+                <p>
+                    Existem leitores de telas livres e gratuitos para o sistema Windows. Alternativos, portanto, aos
+                    leitores tradicionais e de custo alto. Estes, como qualquer tecnologia proprietária, causam
+                    freqüentemente dificuldades, quando não inviabilizam devido ao seu alto custo, a contratação de
+                    pessoas cegas por empresas que, naturalmente, preferem contratar funcionários que exijam os menores
+                    custos possíveis para desempenharem suas funções. Tais empresas não adotariam sistemas operacionais
+                    e tecnologias livres unicamente por causa da necessidade ou preferência de poucos funcionários.
+
+                </p>
+                <p>
+                    Vamos agora apresentar uma solução promissora nesse ramo: o leitor de telas NVDA, sigla em Inglês
+                    para "Acesso Não-Visual ao Ambiente de Trabalho".
+
+                </p>
+                <p>
+                    Faremos uma introdução descrevendo brevemente o que é, como surgiu, os objetivos do NVDA e, ao
+                    final, mostraremos rapidamente como instalar o programa.
+                </p>
+
+
+                <p>
+                    Essa introdução é indispensável para situar o leitor no contexto, no funcionamento do projeto e
+                    facilitar o entendimento das coisas adiante.
+
+                </p>
+                <p>
+                    Faremos aqui menções a vários sistemas, softwares e organizações na Internet. Para saber os
+                    endereços das mesmas, consulte, por gentileza, as referências ao final deste artigo.
+
+                </p>
+
+                <h2>História: Como Surgiu o NVDA?</h2>
+                <p>
+                    O NVDA foi iniciado em meados de 2006, pelo jovem australiano Michael Curran, de apelido Mick
+                    (pronuncia-se maik). Mick então cursava o segundo ano de bacharelado em Ciência da Computação, mas
+                    muito tempo antes ele já percebera as distorções e mazelas que cerceiam o acesso das pessoas cegas,
+                    mais especificamente no campo tecnológico.
+                </p>
+                <p>
+                    Sendo ele cego, foi obrigado a comprar um leitor de tela comercial para uso pessoal, profissional e
+                    estudantil. Apesar de esse leitor proporcionar acesso relativamente ótimo aos computadores que Mick
+                    precisaria usar, com o passar do tempo e convívio com pessoas em situação semelhante mundo afora,
+                    pelo menos três problemas ficaram claros para ele:
+                </p>
+                <ul id="links">
+                    <li>O alto custo financeiro desses produtos impõe sérias restrições a muitas pessoas, de maneira
+                        calamitosa, nas nações menos afortunadas do planeta.</li>
+                    <li>Questão de ordem técnica, diz respeito ao condicionamento dos usuários cegos às políticas e
+                        idéias das empresas específicas que desenvolvem o software assistivo. Por mais excelentes que
+                        sejam as soluções encontradas por um determinado fabricante de software, cada pessoa em
+                        particular, como usuária e também consumidora, sempre ficará insatisfeita com algum detalhe,
+                        isso porque essas soluções geralmente são designadas para atender a todos de modo genérico e não
+                        específico. Como a licença desses softwares é quase sempre restritiva, torna-se impossível a
+                        cada usuário ou grupo de usuários adaptarem o software em questão àquela necessidade em
+                        específico</li>
+                    <li>Finalmente, o principal problema envolve aspectos morais e éticos. No caso que estamos tratando,
+                        não é justo que as pessoas cegas tenham de providenciar sozinhas os meios necessários e arcar
+                        por si só com os custos das soluções assistivas, para dispor de acesso às mesmas informações que
+                        as demais pessoas dispõe proporcionadas pela tecnologia. Sabendo disso, muitos optam por
+                        adquirir cópias ilegais desses softwares, o que, por um lado ameniza os gastos financeiros, mas
+                        de outro mantém a sujeição desses usuários às políticas do fabricante daquele software, além de
+                        ferir a licença outorgada por esse fabricante.</li>
+                </ul>>
+
+                <h2>Objetivos e Princípios do NVDA.</h2>
+                <p>Em razão de tudo isso, Mick resolveu abandonar por completo a faculdade de Ciência da Computação e
+                    dedicar-se a um projeto capaz de solucionar esses e outros problemas de quem necessita trabalhar em
+                    sistemas Windows, que são dominantes entre os sistemas proprietários atuais.</p>
+
+                <p>Para atingir esse objetivo, Mick decidiu iniciar o desenvolvimento de um leitor de telas para
+                    Windows, estabelecendo alguns princípios básicos a serem seguidos:</p>
+
+                <ul id="links">
+                    <li>O leitor deve ser gratuito, com o fim de facilitar a disponibilidade do mesmo e o acesso de
+                        qualquer pesO leitor deve sempre permanecer aberto a novas idéias, sugestões e experimentos
+                        provindos de todas as partes do mundo, a fim de não limitar-se ao que já foi tentado nos
+                        produtos comerciais similares.soa aos mesmos sistemas dos demais leitores de tela sem custos
+                        adicionais e exorbitantes;</li>
+
+                    <li>O leitor deve ser licenciado de modo a que qualquer pessoa capaz do mundo possa contribuir para
+                        a melhoria e aperfeiçoamento deste, como adaptá-lo às necessidades específicas e redistribuí-lo,
+                        se for o caso.</li>
+
+                    <li>O leitor deve sempre permanecer aberto a novas idéias, sugestões e experimentos provindos de
+                        todas as partes do mundo, a fim de não limitar-se ao que já foi tentado nos produtos comerciais
+                        similares.</li>
+
+                    <li>O leitor deve, na medida do possível, seguir um "design" de fácil entendimento para
+                        programadores iniciantes, sem deixar de oferecer uma arquitetura poderosa e flexível ao máximo,
+                        que permita melhorar e implementar mais recursos e portar o programa para outros dispositivos e
+                        sistemas proprietários, quando for o caso.</li>
+                </ul>
+                <p>Mick chamou, então, esse leitor de "Non Visual Desktop Access" ou NVDA, e escolheu como licença a
+                    largamente reconhecida e consagrada GPL (sigla em Inglês para "LICENÇA PÚBLICA GERAL GNU"), de
+                    autoria da Fundação para o Software Livre e adotada pelos sistemas GNU/Linux e outros.</p>
+
+                <p>Como linguagem de programação ele escolheu a Python, uma linguagem de fácil aprendizado e ao mesmo
+                    tempo riquíssima em recursos, usada inclusive internacionalmente por muitos professores
+                    universitários para introduzir estudantes de ciência da Computação ao universo da programação de
+                    computadores.</p>
+
+                <h2>Conseqüências das Iniciativas Adotadas.</h2>
+
+                <p>Por fim, Mick e alguns conhecidos fundaram recentemente a NV Access (acesso não visual), organização
+                    não-governamental sem fins lucrativos, destinada a desenvolver projetos e tecnologias livres que
+                    facilitem a acessibilidade para pessoas cegas e de baixa visão.</p>
+
+                <p>Como resultado dessa postura comunitária e cooperativa do autor e dos amigos mais próximos que o
+                    ajudaram no começo, após seis meses desde o início do projeto e divulgação do mesmo, o NVDA já
+                    contava com um pequeno time compromissado de desenvolvedores e as primeiras traduções para outros
+                    idiomas começavam a surgir.</p>
+
+                <p>Hoje faz cerca de um ano que Mick tomou a iniciativa e a popularidade do projeto surpreende a cada
+                    dia, crescendo como que em progressão geométrica. Já existe tradução para Português do Brasil. As
+                    qualidades técnicas de performance, estabilidade e o grau proporcionado de acessibilidade melhoram
+                    notoriamente a cada nova revisão lançada.</p>
+
+                <h2>Como Conhecer e Instalar o NVDA.</h2>
+
+                <p>Aqueles que necessitem de uma solução aos moldes do NVDA, ou simplesmente querem experimentar, podem
+                    instalá-lo em poucos passos:</p>
+
+                <ul id="links">
+                    <li>Acessem esta página: www.nvda-project.org/snapshots . Site Externo.. Aí se encontra a versão
+                        mais recente do programa. Recomenda-se sempre instalar uma versão nova, porque ela, geralmente,
+                        é mais estável e possui mais recursos que as anteriores.</li>
+
+                    <li>Não se assuste caso não souber ler em Inglês; acesse o primeiro link da página que se chama
+                        "installer", para baixar um instalador automático do NVDA. Essa forma de instalar é ideal para
+                        quem não tem ou não sabe se tem um descompactador de arquivos no sistema, ou quer garantir que
+                        os arquivos sejam colocados nos lugares exatos.</li>
+
+                    <li>Salve o arquivo em uma pasta qualquer, vá até ela, execute o arquivo, responda a qualquer
+                        pergunta se realmente deseja executá-lo e a instalação começará.</li>
+
+
+                </ul>
+
+                <p>A outra forma de instalar é o segundo link da página acima informada, chamado "zip archive" que baixa
+                    um arquivo compactado. Ele é ideal se você prefere escolher com mais segurança a pasta onde quer
+                    instalar o programa e deseja fazê-lo de modo mais transparente:</p>
+
+                <ul id="links">
+                    <li>Salve o arquivo e descompacte-o numa pasta vazia. Sugerimos C:\nvda, mas pode ser outra
+                        qualquer.</li>
+                    <li>Desligue o seu leitor de telas, caso esteja usando algum e execute o arquivo nvda.exe,
+                        pressionando enter ou clicando, a depender do seu caso;</li>
+
+                    <li>O NVDA toca então algumas notas musicais, começa a falar fazendo algumas perguntas. Basta ir
+                        dando continuidade pressionando enter até o final da instalação;</li>
+
+                    <li>Ao final ele mostra uma janela contendo informações básicas para quem nunca trabalhou com ele.
+                        Use as setas para ler.</li>
+
+
+                </ul>
+
+                <p>A voz padrão é o sintetizador Espeak. Você pode trocar de idioma teclando o comando CONTROL+SHIFT+V.
+                    Pode escolher também outro sintetizador teclando CONTROL+SHIFT+S.</p>
+
+                <h2>Referências.</h2>
+
+                <p>Explicaremos posteriormente o muito mais que se pode fazer com o NVDA, esse leitor fantástico que
+                    tantos problemas nos vai resolver. Por ora, você pode ler os documentos referenciados nesse artigo e
+                    que são bastante explicativos:</p>
+
+                <ul id="links">
+                    <li>Sítio oficial do NVDA, em Inglês: www.nvda-project.org (abre em nova janela)</li>
+                    <li>Sítio da ONG NV Access, em Inglês: www.nvaccess.org (abre em nova janela)</li>
+                    <li>Licença Pública Geral GNU, tradução para Português:
+                        http://www.magnux.org/doc/GPL-pt_BR.txt (abre em nova janela).</li>
+                </ul>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

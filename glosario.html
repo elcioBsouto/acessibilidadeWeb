@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/glosario.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- nav -->
+
+
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                    <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                    <select id="fontSize">
+                        <option value="1.5rem" selected>A[ + ]</option>
+                        <option value="1.0rem">A[ . ]</option>
+                        <option value="0.5rem">A[ - ]</option>
+                    </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+                <h1>Disponibilizar uma explicação para siglas, abreviaturas e palavras incomuns (Glossário)</h1>
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="padroes.html">Padrões Web</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Glossário.</span></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+
+                <ul id="links">
+                    <li><strong>Acessibilidade:</strong></strong>Significa permitir o acesso por todos, independente do
+                        tipo de
+                        usuário, situação ou ferramenta.</li>
+                    <li>Acessibilidade à Web:</strong> Criar ou tornar as ferramentas e páginas Web acessíveis a um
+                        maior número
+                        de usuários, inclusive pessoas com deficiência.</li>
+                    <li><strong>Agente de Usuário:</strong> Qualquer software que recupera e apresenta conteúdo Web para
+                        seus usuários,
+                        possibilitando que o usuário interaja com o conteúdo Web.</li>
+                    <li><strong>Atributo:</strong> Os atributos servem para definir uma propriedade de um elemento
+                        (X)HTML.</li>
+                    <li><strong>CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans
+                            Apart):</strong> consiste
+                        em um meio automatizado de gerar desafios que, hipoteticamente, apenas seres humanos possam
+                        resolver. O tipo mais comum requer que o usuário identifique letras distorcidas em um arquivo de
+                        imagem.</li>
+                    <li><strong>CSS (Cascading Style Sheets – Folhas de estilo em cascata):</strong> Linguagem que
+                        descreve a
+                        apresentação, visual ou sonora, de um documento.</li>
+                    <li><strong>Leitor de tela:</strong> Software que fornece informações através de síntese de voz
+                        sobre os elementos
+                        exibidos na tela do computador. Esses softwares interagem com o sistema operacional, capturando
+                        as informações apresentadas na forma de texto e transformando-as em resposta falada através de
+                        um sintetizador de voz. Para navegar utilizando um leitor de tela, o usuário faz uso de comandos
+                        pelo teclado. O leitor de tela também pode transformar o conteúdo em informação tátil, exibida
+                        dinamicamente em Braille por um hardware chamado de linha ou display Braille, servindo, em
+                        especial, a usuários com surdocegueira.</li>
+                    <li><strong>Navegador textual:</strong> Tipo de navegador baseado em texto, diferente dos
+                        navegadores com interface
+                        gráfica, onde as imagens são carregadas. O navegador textual pode ser utilizado com leitores de
+                        tela por pessoas com deficiência visual e, também, por pessoas que acessam a Internet com
+                        conexão lenta.</li>
+                    <li><strong>Navegador:</strong> Programa que permite ao usuário consultar e interagir com o material
+                        publicado na
+                        Web.</li>
+                    <li><strong>Padrões Web (Web Standards):</strong> Padrões Web são regras de tecnologia definidas
+                        pelo W3C e outros
+                        órgãos da área utilizados para criar e interpretar o conteúdo Web.</li>
+                    <li><strong>Podcast:</strong> Arquivo ou uma série de arquivos de áudio digital, geralmente em
+                        formato MP3 ou AAC
+                        (este pode conter imagens estáticas e links), publicada através de podcasting (forma de
+                        publicação de arquivos de mídia digital pela Internet, através de um feed RSS).</li>
+                    <li><strong>Tag/Elemento:</strong> Código usado para marcar o início e o fim de um elemento (X)HTML.
+                    </li>
+                    <li><strong>Tecnologia assistiva:</strong> refere-se ao conjunto de artefatos disponibilizados às
+                        pessoas com
+                        deficiência, que contribui para prover-lhes uma vida mais independente, com mais qualidade e
+                        possibilidades de inclusão social. O propósito das tecnologias assistivas reside em ampliar a
+                        comunicação, a mobilidade, o controle do ambiente, as possibilidades de aprendizado, trabalho e
+                        integração na vida familiar, com os amigos e na sociedade em geral.</li>
+                    <li><strong>W3C (World Wide Web Consortium):</strong> Consórcio de âmbito internacional com a
+                        finalidade de
+                        desenvolver especificações, guias e ferramentas para Web.</li>
+                    <li><strong>WAI:</strong> (Accessibility Initiative - Iniciativa de Acessibilidade na Web):</strong>
+                        Tem como objetivo
+                        desenvolver protocolos que melhorem a interoperabilidade e promovam a evolução da WWW.</li>
+                    <li><strong>WCAG (Web Content Accessibility Guidelines:</strong> Recomendações de Acessibilidade
+                        para Conteúdo Web):</strong>
+                        Abrange diversas recomendações com a finalidade de tornar o conteúdo Web mais acessível.</li>
+                    <li><strong>Webcast:</strong> Transmissão de áudio e vídeo por meio da Internet ou redes
+                        corporativas para um grupo
+                        de pessoas, simultaneamente.</li>
+                    <li><strong>XHTML (Extensible HyperText Markup Language):</strong> É a linguagem HTML reformulada
+                        para seguir as
+                        regras do XML.</li>
+                    <li><strong><strong>XML (Extensible Markup Language):</strong> Uma linguagem de marcação semelhante
+                            à HTML, mas que permite a
+                            descrição de dados definidos por elementos de programação</li>
+                </ul>
+
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+                <p>Site Construido usando Acessibilidade.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>p

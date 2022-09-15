@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/assistivas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+     
+            <nav class="container1">
+
+                <div class="menu">
+                    <ul class="grid">
+                        <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                        <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                        <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                        <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu">
+                    <ul class="grid">
+
+                        <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                        <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                        <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                                onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste
+                                [Alt + 3]</a></li>
+                                <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                                <select id="fontSize">
+                                  <option value="1.5rem" selected>A[ + ]</option>
+                                  <option value="1.0rem">A[ . ]</option>
+                                  <option value="0.5rem">A[ - ]</option>
+                                </select>
+
+                    </ul>
+                </div>
+
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
+            </nav>
+
+            <div class="divider-1"></div>
+
+
+            <nav class="container">
+                <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+                <div class="menu">
+                    <ul class="grid">
+
+                        <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                        <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                        <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                        <li><a class="title" href="contacto.html">Contato</a></li>
+
+                    </ul>
+
+
+                </div>
+
+
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
+            </nav>
+            <div class="divider-1"></div>
+        </header>
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>Navegação Via Teclado e Leitores de Tela.</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Navegação Via Teclado e Leitores de Tela.</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Navegação via Teclado.</h2>
+                <p>
+                    Nesse texto, procurarei dar uma noção, como pessoa com deficiência visual*1, do que seja a navegação
+                    via teclado e a lógica nela embutida, além de como funciona um leitor de tela*2, para que os
+                    desenvolvedores de páginas da Web entendam, menos superficialmente, nossas dificuldades e
+                    facilidades no uso da internet.
+
+                </p>
+                <p>
+                    No caso dos leitores de tela para deficientes visuais, as informações contidas na página não são
+                    exatamente obtidas pelo que aparece na tela, mas sim através do código por detrás dela e que a
+                    produziu. Se por acaso o código que está espelhando algo na tela for um código fechado, os leitores
+                    de tela serão incapazes de fazer a leitura e, ao contrário, se for um código aberto e dentro dos
+                    padrões web, o máximo possível de informações poderão ser sonorizadas e funções existentes na página
+                    poderão ser executadas pelo teclado.
+
+                </p>
+                <p>
+                    É bom observar que, entre os vários softwares para pessoas com deficiência, existem qualidades
+                    diferentes na capacidade dos mesmos para traduzirem os códigos em informação inteligível. Dessa
+                    forma, as regras internacionais de acessibilidade não se baseiam no que há de melhor nesses
+                    programas, mas em diretrizes de acessibilidade genéricas, que podem ou não serem aproveitadas por
+                    eles, dependendo da qualidade de cada um.
+                </p>
+
+                <p>Assim, um mesmo código pode estar acessível para um software e inacessível para outro. Procurarei
+                    mostrar a acessibilidade que podemos fazer levando-se em conta as diretrizes gerais e internacionais
+                    de acessibilidade WCAG - WAI, W3C Site Externo. e não a de um leitor de tela, linha Braille ou
+                    software de comando de voz específico, de maneira a ampliarmos o máximo possível o trabalho de
+                    acessibilidade, para que a maioria das pessoas o desfrute.</p>
+
+                <p>A acessibilidade de uma página, no caso de softwares específicos para pessoas com deficiência, porém,
+                    não descansa no fato de tais softwares ajudarem a navegar ou reproduzirem o que aparece na página,
+                    mas também na execução de tarefas disponíveis nela, mesmo porque, algumas pessoas com deficiência,
+                    não necessitam desses softwares, só se utilizando da navegação via teclado, oferecida por seus
+                    browsers.</p>
+
+                <p>Assim, o preenchimento de formulários, envio de e-mails, pesquisa por palavras, respostas a enquetes,
+                    e coisas do gênero, precisam ser executadas através desses mesmos softwares, como na simples
+                    navegação via teclado.</p>
+
+                <p>Por essa causa, dizemos que não basta incluirmos na codificação de uma página elementos e atributos
+                    que a torne acessível, mas penetrarmos também na lógica da utilização da navegação via teclado, para
+                    que a utilização da página fique fácil e confortável. Fazendo-se isso, o conceito de acessibilidade
+                    une-se ao de usabilidade.</p>
+
+                <p>Se confeccionarmos páginas navegáveis via teclado pelas conseqüentes teclas de atalho, e se criarmos
+                    uma boa usabilidade das mesmas, atingiremos um percentual de acessibilidade bastante bom para a
+                    navegação por pessoas com deficiência, como cegos, tetraplégicos, alguns níveis de paralisia
+                    cerebral e outros, além de podermos deixar a navegação mais rápida, fácil e eficiente para todos,
+                    com o chamado desenho universal, o que inclui pessoas sem deficiências sensoriais, motoras ou
+                    cognitivas.</p>
+
+                <p>Se beneficiarão da acessibilidade e da usabilidade, pessoas consideradas usuárias comuns, além
+                    daquelas que, por alguma razão, estejam com uma conexão lenta, sem mouse ou com dificuldade de
+                    utilizá-lo, com telas pequenas, como nos celulares, etc., ficando as páginas além de mais fáceis de
+                    serem navegadas, também mais rápidas de serem carregadas. Isso se deve também ao fato de que, em
+                    acessibilidade, é sugerido o desenvolvimento da página dentro dos padrões web, com um código
+                    semântico e com a separação entre conteúdo, apresentação e comportamento.</p>
+
+                <p>Algumas pessoas com deficiência necessitam de um nível diferenciado de acessibilidade, como é o
+                    exemplo de pessoas com deficiência visual, que precisam de equivalentes textuais para as imagens, e
+                    os surdos, que necessitam os mesmos equivalentes textuais, só que para o som. Como por exemplo, um
+                    aviso textual de que existe música de fundo em uma página, pois o surdo pode incomodar as pessoas em
+                    torno dele ao entrar numa página e não saber que está reproduzindo sons para todo o ambiente.</p>
+
+
+                <h2 id="irsegundoconteudo">Teclas de Atalho - Navegação Via Teclado.</h2>
+
+
+
+                <p>
+                    A navegação via teclado, usada por todos aqueles que não conseguem utilizar-se do mouse de forma
+                    adequada, ou mesmo simplesmente não conseguem se utilizar deles, não são teclas produzidas por um
+                    software especial, mas, principalmente, teclas ou combinação de teclas oferecidas pelo próprio
+                    browser, e também aquelas criadas pelo desenvolvedor da página.
+
+                </p>
+                <p>
+                    Quando for desenvolver um código, procure estruturar a página de forma lógica. Tenha sempre em mente
+                    que a navegação poderá ser efetuada através do teclado, que o deslocamento do foco nos links e
+                    objetos da página, por padrão, se dará de cima para baixo e da esquerda para a direita, e que as
+                    tags (etiquetas) são lidas seqüencialmente pelos browsers e softwares.
+                </p>
+                <p>
+                    As teclas de atalho já existentes nos navegadores podem ser conhecidas e utilizadas
+                    independentemente da existência de leitores de tela, como as teclas de atalho do Internet Explorer,
+                    as teclas de atalho do Firefox. ou as teclas de atalho do Chrome.
+                </p>
+                <p>Se levarmos em conta as teclas de Atalho dos navegadores, poderemos exemplificar como uma pessoa com
+                    dificuldade de coordenação motora, mas com perfeita acuidade visual, que se utiliza da navegação via
+                    teclado, faria para ultrapassar menus, geralmente colocados à esquerda em frames, em tabelas, ou
+                    mesmo como estrutura de páginas padrão, onde esses aparecem primeiro que o conteúdo da página.</p>
+
+                <p>As teclas de atalho são ferramentas especiais em acessibilidade, quer sejam do browser, quer sejam
+                    feitas pelo desenvolvedor da página, quer sejam disponíveis pelo software específico de acesso.</p>
+
+                <p>Essas são noções básicas para o entendimento das dificuldades que podem ser ultrapassadas quando se
+                    faz acessibilidade numa página. O bom profissional que deseje fazer o melhor de acessibilidade e
+                    usabilidade, ainda pode, para entender o máximo possível a lógica da navegação via teclado, ou mesmo
+                    para testar seu trabalho de acessibilidade, navegar pela Web sem seu mouse, para entender como,
+                    algumas vezes, não se tem como realizar a navegação ou se utilizar de serviços, tão fáceis de se
+                    produzirem com ele. Além disso, se quiser ir mais fundo, se utilizar também dos softwares
+                    específicos, como os leitores de tela para pessoas com deficiência visual, para ver, e escutar, onde
+                    o acesso está fechado para nós. Perfeito, então, seria desligar seu monitor, navegar via teclado e,
+                    adquirindo uma cegueira virtual, entrar bem fundo nas necessidades do acesso. Isso seria o ideal,
+                    apesar de estar longe do que podemos esperar!</p>
+
+                <h2 id="irterceiroconteudo">Leitores de Tela.</h2>
+
+                <ul id="links">
+                    <li><a href="https://www.freedomscientific.com/products/software/jaws/">Jaws for Windows - Software
+                            comercial (abre em nova janela)</a></li>
+                    <li><a href="https://www.virtualvision.com.br/">Virtual Vision - software comercial - Windows (abre
+                            em nova janela)</a></li>
+                    <li><a href="https://www.nvaccess.org/">NVDA - software livre e aberto para plataforma Windows.
+                            (abre em nova janela)</a></li>
+                    <li><a href="http://www.gwmicro.com//">Window-Eyes - Software comercial para Windows. (abre em nova
+                            janela)</a></li>
+                    <li><a href="http://intervox.nce.ufrj.br/~hpdosvox/download.htm">Dosvox - Sistema de programas livre
+                            e aberto: navegador Webvox (abre em nova janela)</a></li>
+                    <li><a href="https://dan.ubuntubrasil.org/">Orca - software livre e aberto - Distribuição Ubuntu
+                            para Linux (abre em nova janela)</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

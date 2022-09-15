@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/assistivas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>Teclado e Mouse Inovadores - pela Boca.</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Teclado e Mouse Inovadores - pela Boca.</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+
+                <p>
+                    O Dispositivo incorpora teclado e mouse de computador para ser inserido na boca e utilizado pelos
+                    dentes e a língua. Um revolucionário sistema que pode permitir que pessoas que não têm controle dos
+                    membros superiores naveguem na internet.
+
+                </p>
+                <p>
+                    As tentativas foram muitas e a idéia já não é nova, no entanto, até agora os cientistas ainda não
+                    tinham conseguido desenvolver um dispositivo universal baseado num teclado e num mouse que pudesse
+                    ser incorporado na boca, ou seja, no palato superior e nos dentes.
+
+                </p>
+                <p>
+                    A idéia é teclar através da língua para poder viajar na internet, jogar PC games, conversar em chats
+                    ou até trabalhar. Um dispositivo que pode modificar a vida das pessoas que não têm controle dos
+                    membros superiores e incapacidades motoras quase totais.
+                </p>
+
+
+                <p>
+                    O novo dispositivo, desenvolvido pela companhia Gravitonus Gt. de Moscovo, na Rússia, foi agora
+                    premiado no concurso IT Business e ultrapassa todas as barreiras do imaginário. Um teclado com 19
+                    teclas e um joystick que é colocado no palato superior e é capaz de comandar um PC.
+
+                </p>
+                <p>
+                    Os investigadores envolvidos no projeto referem que já se tinha tentado desenvolver um dispositivo
+                    semelhante, no entanto, "entre outras coisas, o problema era que se falhava ao desenvolver um
+                    dispositivo universal e não um individual", afirma Alexy Kosik, cirurgião ortopedista da Gravitonus
+                    Gt., citado pela agência de notícias científicas russa, InformNauka.
+
+                </p>
+                <p>
+                    "Não será necessário fazer um especial para cada consumidor, como dentaduras ou aparelhos - senão
+                    iria tornar imediatamente o conceito difícil de finalizar e dispendioso, caso esta opção do
+                    dispositivo não pudesse ser disponibilizado para as massas", afirma o especialista e adianta que,
+                    "ninguém foi bem sucedido ao fazer este dispositivo, de forma a que qualquer pessoa que necessitasse
+                    dele o pudesse comprar, desempacotá-lo e utilizá-lo. Mas nós tivemos sucesso. Apesar, de não ter
+                    sido de forma imediata - toda a idéia desde a concepção até ao dispositivo final levou-nos 5 anos
+                    até ficar completa".
+                </p>
+
+
+                <p>
+                    Para desenvolver um teclado que possa ser aplicado universalmente, os especialistas utilizaram um
+                    plástico especial com 'forma de memória' que é colocado no palato e através da pressão dos dentes
+                    molda-se individualmente. Os especialistas indicam que o mecanismo está equipado com uma voltagem
+                    mínima (0,2Vt) e por isso não oferece perigo para os utilizadores.
+
+                </p>
+                <h2>Como funciona?</h2>
+                <p>
+                    A língua atua como os dedos no teclado e no mouse, é esta que vai exercer pressão sobre as teclas. À
+                    semelhança com um teclado vulgar, podem ser feitas combinações de teclas para determinadas funções
+                    do Windows. Existem duas teclas específicas que serão pressionadas pelos dentes e que correspondem
+                    às teclas direita e esquerda do mouse.
+                </p>
+                <p>
+                    Como o dispositivo é colocado no palato, o utilizador usa-o sem o visualizar. Inicialmente, essa
+                    será provavelmente a tarefa mais difícil, já que o indivíduo terá de memorizar o local de cada
+                    tecla. Os especialistas referem que esse é um processo que exigirá apenas 10 minutos até que o
+                    utilizador esteja apto a controlar o PC.
+                </p>
+                <p>
+                    Para além de permitir navegar na internet, trabalhar no computador e jogar PC games, os
+                    especialistas indicam que o sistema poderá vir a ser combinado com o sistema de 'casa inteligente',
+                    dando a possibilidade a pessoas sem controle motor, abrir janelas ou portas, acender as luzes ou
+                    desligarem o fogão através de um simples click, utilizando a língua.
+                </p>
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

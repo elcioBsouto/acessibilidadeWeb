@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contrast.css" />
+
+    <link rel="stylesheet" href="css/audiodescricao.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                    <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                    <select id="fontSize">
+                        <option value="1.5rem" selected>A[ + ]</option>
+                        <option value="1.0rem">A[ . ]</option>
+                        <option value="0.5rem">A[ - ]</option>
+                    </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+
+
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <h1>Daltonismo</h1>
+                    <ul id="links">
+                        <li><a href="index.html">Pagina Inicial</a></li>
+                        <li><a href="padroes.html">Padrões Web</a></li>
+
+                        <!--   <li><a href="">Sub-Category</a></li> -->
+                        <li><span aria-current="page">Disponibilizar Imagens por tipo de Daltonismo</span></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div>
+                
+
+
+                <h2 id="irprimeiroconteudo">Disponibilizar Imagens por tipo de Daltonismo</h2>
+
+                <p>
+                    Vale lembrar que a descrição de imagens é utilizada por pessoas com deficiência visual, sejam
+                    cegas ou com baixa visão. Essas pessoas utilizam seus computadores e smartphones, via
+                    softwares de acessibilidade, como leitores de tela, para ter acesso à técnica da audiodescrição.
+                    Os programas reconhecem o material textual e o transformam em áudio, por meio de vozes
+                    sintetizadas.
+                </p>
+                <p>
+                    Os leitores de tela, entretanto, não descrevem arquivos em formatos de imagem, como JPEG e
+                    PNG, o que torna o conteúdo inacessível. Por essa razão, é necessário descrever fotos, planilhas,
+                    gráficos e ilustrações, a fim de que esses conteúdos se tornem acessíveis ao público com
+                    deficiência visual.
+
+                </p>
+                <p>
+                    Diante disso, existem algumas orientações para que a descrição de imagens produza materiais
+                    digitais acessíveis. Essas orientações podem ajudar as pessoas que atuam na produção de
+                    imagens a seguirem um padrão que beneficie o leitor e os receptores das informações com pleno
+                    acesso às imagens por meio de leitores de tela.
+                </p>
+
+                <div>
+                    <label for="image">Escolha a imagem pelo tipo de Daltonismo:</label>
+                    <select id="image">                        
+                        <option value="imagens/deuteranope.PNG" selected>Deuteranopia</option>
+                        <option value="imagens/protanopia.PNG">Protanopia </option>
+                        <option value="imagens/tritanope.PNG">Tritanopia</option>
+                    </select>
+                    <button name="escolhaImagem" id="escolhaImagem">
+                        Mudar Imagem
+                    </button>
+                    
+                </div>
+
+                <figure id="videoContainer" data-fullscreen="false">
+                    <img src="imagens/IMAGEM-BLOG-2.jpg"
+                        alt="Atendimento educacional especializado com uso de prancha.">
+                    <figcaption id="figcaption">
+                        A foto mostra duas pessoas sentadas ao lado de uma pessoa em uma cadeira de rodas, duas pessoas
+                        se encontram apoiadas a mesa, tirando o ciclista que se encontra sentado a mesa. Eles estao em
+                        um parque cheio de arvores,as tres pessoas
+                        estao tomando refrigerante, tirado de um colma de cor branca ,e um deles tem uma bicicleta.
+                        os tres tem chapeus e temos um protector de cabeca para o ciclista que se encontra em cima da
+                        mesa.
+                    </figcaption>
+                </figure>
+
+
+            </div>
+
+
+
+        </div>
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+            <div class="brand">
+                <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+                <p>Site Construido usando Acessibilidade.</p>
+                <p>Todos os direitos reservados</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+    <script type="text/javascript" src="js/controleImagens.js"></script>
+    <script src="js/event.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

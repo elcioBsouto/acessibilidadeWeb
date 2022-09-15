@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+ 
+    <link rel="stylesheet" href="css/contrast.css" />
+    <link rel="stylesheet" href="css/perguntas.css" />
+    <link rel="stylesheet" href="css/migalhasdepao.css" />
+   
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/deque-patterns.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="icon/style.css" />
+
+</head>
+
+<body>
+
+    <!-- nav -->
+    <header class="header">
+
+        <nav class="container1">
+
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#carousel">Ir para conteudo (1)</a></li>
+                    <li><a class="title" href="#services">Ir para menu (2)</a></li>
+                    <!-- <li><a class="title" href="#multimidia">Ir para pesquisa (3)</a></li> -->
+                    <li><a class="title" href="#contact">Ir para rodape (4)</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="acessibilidadesite.html">Acessibilidade deste Site</a></li>
+                    <li><a class="title" href="mapa.html">Mapa do Site</a></li>
+                    <li><a class="title" href="#altocontraste" id="altocontraste" accesskey="3"
+                            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()">Alto Contraste [Alt +
+                            3]</a></li>
+                            <li><a class="title" href="#" id="tamanho">Tamanho do Texto:</a></li>
+                            <select id="fontSize">
+                              <option value="1.5rem" selected>A[ + ]</option>
+                              <option value="1.0rem">A[ . ]</option>
+                              <option value="0.5rem">A[ - ]</option>
+                            </select>
+
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+
+        <div class="divider-1"></div>
+
+
+        <nav class="container">
+            <a class="logo" href="index.html">Acessibilidade<span class="logo-color">Web.</span></a>
+
+            <div class="menu">
+                <ul class="grid">
+
+                    <li><a class="title" href="padroes.html">Padrões Web</a></li>
+                    <li><a class="title" href="tecnologiasassistivas.html">Tecnologias Assistivas</a></li>
+                    <li><a class="title" href="perguntasfrequentes.html">Perguntas Frequentes</a></li>
+
+                    <li><a class="title" href="contacto.html">Contato</a></li>
+
+                </ul>
+
+
+            </div>
+
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+        <div class="divider-1"></div>
+    </header>
+
+
+    <main>
+
+        <div class="container grid">
+            <div class="text" id="about">
+                <h1>Perguntas Frequentes Sobre Acessibilidade</h1>
+                <ul>
+                    <ul>
+                        <li>
+                            <a href="#irprimeiroconteudo" accesskey="1">Para que serve acessibilidade na internet?</a>
+                        </li>
+                        <li>
+                            <a href="#irsegundoconteudo" accesskey="2">Acessibilidade na web é para cegos?</a>
+                        </li>
+                        <li>
+                            <a href="#irterceiroconteudo" accesskey="3">Existe legislação a respeito do assunto?</a>
+                        </li>
+                        <li>
+                            <a href="#irquartoconteudo" accesskey="4">Sites acessíveis são necessariamente feios, sem
+                                cores e imagens? </a>
+                        </li>
+                        <li>
+                            <a href="#irquintoconteudo" accesskey="5">O que é um leitor de tela? Um sintetizador de voz?
+                                E um Display Braille? Como funcionam?</a>
+                        </li>
+                        <li>
+                            <a href="#irsextoconteudo" accesskey="6">Existe acessibilidade especial para leitores de
+                                tela? </a>
+                        </li>
+                        <li>
+                            <a href="#irsetimoconteudo" accesskey="7">O que a acessibilidade web tem a ver com visão
+                                estratégica de mercado? </a>
+                        </li>
+                        <li>
+                            <a href="#iroitavoconteudo" accesskey="8">Como fazer e testar acessibilidade na web?</a>
+                        </li>
+                        <li>
+                            <a href="#irnonoconteudo" accesskey="9">O que o Google tem a ver com isso?</a>
+                        </li>
+
+                    </ul>
+                </ul>
+            </div>
+
+            <div>
+                <h2 id="irprimeiroconteudo">Para que serve acessibilidade na internet?</h2>
+                <p>
+                    A internet oferece serviços de utilidade pública, comerciais e de entretenimento, que podem ajudar a
+                    todos.
+                    Parece ser natural que as pessoas que tenham mais dificuldades de mobilidade para irem a um banco,
+                    supermercado, lojas de compras, de verificarem andamento de processos, lerem jornais e outros
+                    serviços que demandariam locomoção ou ajuda de outras pessoas para serem realizados, sejam nela
+                    incluídas,
+                    proporcionando-lhes liberdade de ação, comunicação e obtenção de informações.
+
+                </p>
+                <p>
+                    Por outro lado, a diversidade de tecnologias atualmente empregadas na internet, acabou por
+                    dificultar sua plena disponibilidade para pessoas que,
+                    a princípio, não teriam dificuldade alguma de um acesso regular.
+
+                </p>
+                <p>
+                    Sendo assim, muitas pessoas para poderem desfrutar dos serviços oferecidos, precisam que as páginas
+                    da web que os disponibiliza sejam codificadas dentro de determinados padrões, para que possam
+                    oferecer um acesso que sirva
+                    para o maior número de usuários possível. Esse é o objetivo de se fazer acessibilidade na web.
+                </p>
+
+                <h2 id="irsegundoconteudo">Acessibilidade na web é para cegos?</h2>
+                <p>
+                    Sim, mas não exclusivamente para pessoas com essa deficiência, ou mesmo para pessoas que tenham
+                    alguma deficiência.
+
+                </p>
+                <p>
+                    Em geral, restringimo-nos à nossa experiência pessoal, ou mesmo à nossa imaginação, ao pensarmos a
+                    dificuldade do outro. Assim, para entendermos o modo de uso da Internet por algumas pessoas, devemos
+                    lembrar que existem muitos usuários que atuam em contexto muito diferente do comum, como é o caso
+                    dos que não têm a capacidade de ver, ouvir ou deslocar-se, que tenham grandes dificuldades, quando
+                    não mesmo a impossibilidade, de interpretar determinados tipos de informação, não serem capazes de
+                    utilizar teclado ou mouse, que necessitam tecnologias assistivas específicas associadas e
+                    necessárias à navegação,
+                    como navegadores completamente diferentes dos habituais, por voz ou que apenas apresentem texto.
+
+                </p>
+                <p>
+                    Por outro lado, algumas tecnologias hoje consideradas comuns, como os telefones celulares, laptops,
+                    navegadores de páginas que não sejam iguais ao mais comum, o Internet Explorer, mas que podem
+                    oferecer opções de navegação diferenciadas, as várias resoluções de tela, como a 800 x 600, 1024 x
+                    768, 1280 x 1024, 1440 x 900, 1680 x 1050 etc, podem também não funcionar adequadamente caso
+                    determinados padrões de codificação não sejam realizados e, assim,
+                    atrapalharem a visualização oferecidas pelos navegadores.
+                </p>
+                <p>
+                    Usuários com acesso discado ou mesmo com banda larga pouco velozes,
+                    estão cada dia mais impedidos de uma navegação tranqüila e execução de aplicativos que exijam maior
+                    velocidade.
+                </p>
+                <p>
+                    Dessa forma, acessibilidade na web não é só para pessoas com deficiência visual, ou qualquer outro
+                    tipo de deficiência, mas para um número de pessoas cada vez maior,
+                    tanto quanto se expandam as diferentes formas de utilização e acesso à web.
+                </p>
+
+                <h2 id="irterceiroconteudo">Existe legislação a respeito do assunto?</h2>
+                <p>
+                    No Brasil, o decreto nº. 5296/2004 Site Externo, regulamentador da lei de acessibilidade nº 10098,
+                    em seu capítulo VI, dedicou 14 artigos ao Acesso à Informação e Comunicação das pessoas com
+                    deficiência. Tornou obrigatória a acessibilidade na Internet, porém, apenas para às pessoas com
+                    deficiência visual (não contemplando as pessoas com mobilidade motora
+                    reduzida e com deficiência auditiva) e somente a portais do governo.
+
+                </p>
+                <p>
+                    Percebe-se assim, a existência do mito de que acessibilidade web seja apenas para pessoas com
+                    deficiência visual,
+                    chegando a ponto de, erroneamente, legalizar-se tal idéia.
+
+                </p>
+                <p>
+                    Entretanto, recentemente o Brasil assinou a "Convenção Internacional dos Direitos da Pessoa com
+                    Deficiência" Site Externo. na ONU e o Congresso Nacional ratificou, com quórum qualificado,
+                    que esta Convenção se tornasse lei brasileira com status constitucional, desde julho de 2008.
+                </p>
+                <p>
+                    A acessibilidade na internet foi contemplada nos artigos 9 e 21 da Convenção, tornando obrigatória e
+                    crime de discriminação qualquer informação na internet não acessível para qualquer tipo de
+                    deficiência e a qualquer categoria de portal ou site,
+                    de empresa privada ou governamental, acabando assim com as restrições anteriores do decreto.
+                </p>
+
+                <h2 id="irquartoconteudo">Sites acessíveis são necessariamente feios, sem cores e imagens?</h2>
+                <p>
+                    A internet oferece serviços de utilidade pública, comerciais e de entretenimento, que podem ajudar a
+                    todos. Parece ser natural que as pessoas que tenham mais dificuldades de mobilidade para irem a um
+                    banco, supermercado, lojas de compras, de verificarem andamento de processos, lerem jornais e outros
+                    serviços que demandariam locomoção ou ajuda de outras pessoas para serem realizados, sejam nela
+                    incluídas,
+                    proporcionando-lhes liberdade de ação, comunicação e obtenção de informações.
+                </p>
+                <p>
+                    Por outro lado, a diversidade de tecnologias atualmente empregadas na internet, acabou por
+                    dificultar sua plena disponibilidade para pessoas que,
+                    a princípio, não teriam dificuldade alguma de um acesso regular.
+
+                </p>
+                <p>
+                    Sendo assim, muitas pessoas para poderem desfrutar dos serviços oferecidos,
+                    precisam que as páginas da web que os disponibiliza sejam codificadas dentro de determinados
+                    padrões, para que possam oferecer um acesso que sirva para o maior número de usuários possível. Esse
+                    é o objetivo de se fazer acessibilidade na web.
+                </p>
+                <p>
+                    Usuários com acesso discado ou mesmo com banda larga pouco velozes,
+                    estão cada dia mais impedidos de uma navegação tranqüila e execução de aplicativos que exijam maior
+                    velocidade.
+                </p>
+                <p>
+                    Dessa forma, acessibilidade na web não é só para pessoas com deficiência visual, ou qualquer outro
+                    tipo de deficiência, mas para um número de pessoas cada vez maior,
+                    tanto quanto se expandam as diferentes formas de utilização e acesso à web.
+                </p>
+
+                <h2 id="irquintoconteudo">O que é um leitor de tela? Um sintetizador de voz? E um Display Braille? Como
+                    funcionam?</h2>
+                <p>
+                    O leitor de tela é um programa que interpreta os conteúdos do código e os apresenta através de um
+                    sintetizador de voz ou impresso em Braille.
+                    Ele, em verdade, não lê a tela, mas o código por trás dela, interpretando os elementos e atributos
+                    seqüencialmente conforme sua leitura, de cima para baixo e da esquerda para a direita.
+                </p>
+                <p>
+                    Essa leitura do código transforma-se em linguagem inteligível para o ouvinte, não só lendo o que
+                    seja realmente o texto, como descrevendo os elementos existentes na página, como imagens, links,
+                    formulários, tabelas etc. Quando ele passa por um link que contém uma imagem, ele descreve: "link" e
+                    "gráfico". Se no elemento de imagem houver o atributo ALT, ele complementa a narração dos elementos
+                    com o conteúdo textual que estiver dentro do atributo. Assim, se passarmos por um link com imagem,
+                    onde a imagem tenha escrito "Quem Somos" e houver o atributo ALT com o mesmo texto, ele
+                    disponibilizará: "gráfico", "link" "Quem Somos" audivelmente ou em Braille, por exemplo. Temos de
+                    observar que ele falará, em verdade, o conteúdo do atributo ALT e não o desenhado na imagem e que,
+                    para quem vê parece ser texto.
+                    Todo texto em imagem não é um texto real, mas desenhado, como poderia ser qualquer outro desenho.
+
+                </p>
+                <p>
+                    Os leitores de tela não são em Braille ou possuem som. Eles somente carregam em uma área temporária
+                    sua interpretação do código.
+                    Fica a cargo dos sintetizadores de voz ou displays Braille que essa interpretação se torne audível
+                    ou tátil.
+                </p>
+
+                <h2 id="irsextoconteudo">Existe acessibilidade especial para leitores de tela?</h2>
+                <p>
+                    Alguns cuidados devem ser tomados para que os leitores de tela se tornem cada vez mais capazes de
+                    transmitir a mensagem corretamente. Os sintetizadores de voz são a voz do leitor de tela, e a
+                    maioria deles identifica a pontuação através de pausas, de silêncios na "voz", por alguns deles
+                    quase imperceptíveis. Assim um ponto tem um tempo de silêncio até que se leia a próxima palavra, um
+                    tempo menor para a vírgula e tempos mais fracionados ainda para dois pontos e ponto e vírgula. A
+                    exclamação e a interrogação têm sonoridades semelhantes ao que representam, tanto quanto a
+                    reticências. A tecnologia anda tão avançada nesse aspecto,
+                    que alguns sintetizadores reproduzem fantasticamente a voz humana.
+                </p>
+
+                <p>
+                    Assim, verificar a pontuação, a gramática e utilizar um corretor ortográfico são medidas
+                    importantes, pois os sintetizadores de voz reproduzem exatamente o que um leitor de tela lê. Dessa
+                    forma, um texto mal escrito ortograficamente, com abreviaturas do tipo qdo (quando), palavras
+                    acentuadas de forma incorreta, erros gramaticais como palavras no singular quando deveriam estar no
+                    plural e coisas do gênero, podem deixar um usuário sem entender o texto,
+                    ou tendo de parar a leitura corrente para voltar a trechos não entendidos pelos quais acabou de
+                    passar.
+
+                </p>
+
+                <p>
+                    A utilização de equivalentes textuais para as imagens também é fundamental para que o leitor, em sua
+                    passagem,
+                    possa transmitir a importância do significado da imagem no contexto em que se encontra.
+                </p>
+
+                <p>
+                    Um dos cuidados mais fundamentais para a acessibilidade de um conteúdo web é o desenvolvimento do
+                    código desse
+                    conteúdo dentro dos padrões web (web standards), tanto apresentando um código semântico, quanto
+                    separando-o em camadas de conteúdo, apresentação e comportamento. O trabalho só pode estar completo
+                    quando o código estiver validado, tanto o de (X)HTML, quanto o de CSS e scripts, sendo estes não
+                    obstrutivos. Os códigos strict têm contemplado, em sua validação, alguns itens de acessibilidade,
+                    como por exemplo a presença obrigatória do atributo ALT no elemento IMG, existência de elementos e
+                    atributos obsoletos, etc.
+                </p>
+
+                <p>É necessário notar que um leitor de tela utilizado em navegadores gráficos, tem a função não somente
+                    de fazer a leitura dos conteúdos puramente textuais existentes em uma página web, mas também de
+                    descrever a estrutura dessa página. Sendo assim,
+                    ao passar por um elemento <strong>table</strong> e por seus elementos <strong>tr</strong> e
+                    <strong>td</strong> ele fará a leitura para seu usuário como "tabela com tantas colunas e tantas
+                    linhas", além de que, em alguns deles, pressionando-se a tecla "t" pode-se chegar diretamente no
+                    início dessa tabela. Se um layout de página for feito por tabelas, prejudicará sensivelmente a
+                    navegação de um usuário dessa e outras tecnologias assistivas, pois ele, ao se utilizar da teclagem
+                    rápida alcançará inúmeros trechos dessa página que não são tabelas como se fossem, além de ficar
+                    escutando a todo momento
+                    "tabela com tantas colunas e tantas linhas", sem isso estar existindo visualmente.
+                </p>
+
+                <p>
+                    Outros inúmeros erros semânticos são usuais, como a utilização do elemento <strong>h1 - h6</strong>,
+                    onde o tamanho da fonte pode ser definido e o negrito é padrão, utilizados no meio de textos ou
+                    mesmo em links, para destaques e não para cabeçalhos propriamente ditos. Ao se teclar a letra h em
+                    navegadores gráficos alguns leitores de tela se aproveitam dessa semântica para fazerem saltos de
+                    cabeçalho em cabeçalho dentro da mesma página. Pode ser cabeçalho de um menu, de uma combobox e de
+                    um artigo separado em inúmeros subtítulos. No entanto, se não for utilizado corretamente, o usuário
+                    que tem isso como uma forma acessível de navegação rápida, acabará saltando para lugares que não são
+                    cabeçalhos onde esse elemento foi utilizado de forma inadequada. Essa apresentação deve ser feita em
+                    folhas de estilo.
+                    Por isso a importância de um código semântico, onde cada elemento é utilizado para o fim a que foi
+                    criado.
+                </p>
+
+                <p>
+                    Da mesma forma, a separação entre camadas deixa o código mais "enxuto" para que o leitor de tela
+                    (que lê códigos e não telas),
+                    possa ler sem ter ele mesmo que fazer essa separação na hora da leitura, agilizando e simplificando
+                    sua tarefa.
+                </p>
+
+                <p>
+                    Outros cuidados de acessibilidade devem ser tomados mas, em sua maioria, não são específicos para a
+                    deficiência visual,
+                    nem para os leitores de tela necessários para maioria das pessoas que a possui.
+                </p>
+
+                <h2 id="irsetimoconteudo">O que a acessibilidade web tem a ver com visão estratégica de mercado?</h2>
+                <p>
+                    A acessibilidade no desenvolvimento de sites é hoje uma ferramenta de mercado que aumenta
+                    potencialmente
+                    o público que pode chegar até o produto disponível, seja mercadoria ou informação. Não é uma
+                    concessão,
+                    um ato de boa vontade para com usuários com necessidades específicas: é uma visão estratégica.
+                    Imagine o site de um supermercado, uma loja ou de um banco construídos sem a acessibilidade
+                    adequada: uma pessoa com deficiência visual ou com qualquer tipo de dificuldade motora - potenciais
+                    clientes - estarão automaticamente excluídos.
+                    E o que dizer dos sites de serviços públicos?
+                </p>
+                <p>
+                    Nesse caso, provavelmente, os excluídos se sentirão também menos cidadãos. A imagem que tais sites
+                    deixarão para tais pessoas, multiplicadoras de opinião através de suas famílias e de si mesmas,
+                    certamente não será positiva.
+                </p>
+                <p>
+                    Por outro lado, as empresas que não percebem tais pessoas como potenciais consumidoras, não percebem
+                    também as
+                    pessoas que não possuem deficiência como possíveis usuárias de tecnologias diferentes das mais
+                    comuns. Notebooks, celulares e programas de navegação alternativos ao Internet Explorer, como o
+                    Firefox, Opera, Safari e outros, muitas vezes ficam inaptos para a apresentação de suas páginas,
+                    perdendo assim potenciais clientes apenas por não se darem conta de tais possibilidades.
+                </p>
+                <h2 id=iroitavoconteudo>Como fazer e testar acessibilidade na web?</h2>
+                <p>
+                    Existem diretrizes brasileiras e internacionais de acessibilidade web que orientam o desenvolvimento
+                    de páginas acessíveis. A primeira delas foi a que é, até hoje, a mais utilizada e completa de todas,
+                    feita pelo consórcio que padroniza e atualiza os padrões de codificação como HTML, XHTML, CSS e
+                    outros, o chamado W3C World Wide Web Consortium que, em 1999, publicou o documento de Diretrizes de
+                    Acessibilidade do Conteúdo da Web 1.0 Site Externo.
+                    (original em inglês (Web Content Accessibility Guidelines 1.0 Site Externo.), o WCAG 1.0.
+                </p>
+                <p>
+                    A partir desse documento, inúmeros países, até hoje, têm se baseado para fazerem diretrizes
+                    explicitamente baseadas nele, como as "Diretrizes Irlandesas de Acessibilidade Web",
+                    a Section 508 Site Externo em inglês. e outras.
+                </p>
+                <p>
+                    Recentemente o W3C publicou uma nova versão, a WCAG 2.0 Site Externo. e Joe Clark um dos
+                    participantes da confecção do WCAG 1.0, em busca de atualizar esse documento publicou o WCAG Samurai
+                    Site Externo., que está sendo muito considerado entre os profissionais criadores de conteúdos web
+                    acessíveis, mas que, no entanto, apesar de possuir muita consistência e acertos,
+                    não é um documento completo em si mesmo, mas apenas complementar ao WCAG 1.0.
+                </p>
+                <p>
+                    A orientação básica utilizada para se desenvolver páginas acessíveis ainda é o WCAG 1.0, mesmo
+                    porque, o WCAG Samurai é apenas uma errata a essas diretrizes. Entretanto, acredito que, com o
+                    tempo, o W3C continuará, pelo respeito internacional que ainda possui pelos desenvolvedores web,
+                    mesmo questionado,
+                    orientando a produção web acessível e através do WCAG 2.0.
+                </p>
+                <p>
+                    Acessibilidade na web é sempre feita dentro dos códigos dos padrões web. Assim, acessibilidade na
+                    web começa por se construir com um código dentro desses padrões (web standards), ou seja, com esse
+                    código válido e testado em avaliadores automáticos e dentro de uma metodologia definida, como por
+                    exemplo, a da própria W3C (Métodos e Ferramentas de Acessibilidade). Além disso, para que estejamos
+                    realmente respeitando as web standards,
+                    esse código deve ser semântico e estar separado em camadas: conteúdo, apresentação e comportamento.
+                </p>
+                <p>
+                    Entre os itens da metodologia do W3C está o de se navegar pelas páginas com um leitor de tela
+                    de um navegador somente texto e um leitor de tela em um navegador gráfico.
+                    Outro item da metodologia é a avaliação da página por pessoas com deficiência.
+                    Embora esses sejam dois itens de 11 ao todo, alguns desenvolvedores teimam em achar que, se uma
+                    pessoa com deficiência visual navegar por sua página e disser que está boa, que a página está
+                    acessível. Isso pode ser verdade para apenas o leitor de tela que aquela pessoa cega utiliza,
+                    existindo vários no mercado, em qualidade e para ambientes diferentes. Além disso, temos de ter
+                    sempre em mente que acessibilidade web não é feita somente para pessoas com deficiência visual, mas
+                    dentro de padrões que servem não somente para outras deficiências como para todas as pessoas, com ou
+                    sem deficiência, e que um leitor de tela determinado pode não detectar em sua maior parte.
+
+
+                </p>
+
+                <h2 id="irnonoconteudo">O que o Google tem a ver com isso?</h2>
+                <p>
+                    O buscador Google indexa as páginas da web segundo alguns critérios próprios, entre os quais estão
+                    os de
+                    acessibilidade do site. Temos de levar em conta que a indexação é feita por palavras chave e que
+                    essas
+                    palavras são captadas textualmente. Dessa forma, uma imagem sem descrição não entra em sua busca por
+                    imagens,
+                    frames não são indexados se não pelas metatags da página de configuração, a frameset, e o Google só
+                    penetra nas
+                    páginas frameadas caso sejam linkadas através do noframes. Como o noframes faz parte da
+                    acessibilidade feita em
+                    frames no WCAG 1.0, somente com eles e os links do site em seu bojo, que o site se torna visível
+                    para os robots de busca. A errata do Samurai 1.0 bane os frames, retirando-os do desenvolvimento
+                    acessível de sites. Como os leitores de tela só lêem textos e os robots de busca também, fazendo-se
+                    acessibilidade no código de sites, dentro dos padrões web, estamos fazendo também acessibilidade
+                    para robots de indexação como o Google. Pode-se dizer, sem erro, que o Google é o maior leitor de
+                    tela, na verdade,
+                    tal como os leitores de tela, o maior leitor de códigos que existe.
+
+                </p>
+
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+
+    <footer class="section">
+
+        <div class="container grid">
+          <div class="brand">
+            <a class="logo logo-alt" href="#carousel">Acessibilidade<span class="logo-color">Web.</span></a>
+            <p>Site Construido usando Acessibilidade.</p>
+            <p>Todos os direitos reservados</p>
+          </div>
+          <div class="social">
+            <a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+
+    <a href="#carousel" class="back-to-top"><i class="icon-arrow-up-circle"></i></a>
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/controle_tamanho.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/event.js"></script>
+
+    <script type="text/javascript" src="js/deque-patterns.min.js"></script>
+    <script type="text/javascript" src="js/high-contrast.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
