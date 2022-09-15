@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+  body {
+    --font-size: 1rem;
+  }
+
+  h1 {
+    font-size: calc(2 * var(--font-size));
+  }
+
+  p {
+    font-size: var(--font-size);
+  }
+</style>
+
+<body>
+  <button data-font-size="0.5rem">Pequena</button>
+  <button data-font-size="1.0rem">Normal</button>
+  <button data-font-size="2.0rem">Grande</button>
+
+  <h1>Titulo</h1>
+  <p>Texto</p>
+
+
+  <script>
+    const buttons = document.querySelectorAll('button');
+  
+    for (let button of buttons) {
+      button.addEventListener('click', function (event) {
+        document.body.style.setProperty('--font-size', this.dataset.fontSize);
+      });
+    }
+  
+  </script>
+</body>
+
+</html>

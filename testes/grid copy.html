@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcessibilidadeWeb</title>
+
+
+    <style>
+        .item-1 {
+            background: orange;
+            grid-area: header;
+        }
+
+        .item-2 {
+            background: purple;
+            grid-area: advert;
+        }
+
+        .item-3 {
+            background: yellow;
+            grid-area: content;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .item-4 {
+            background: blue;
+            grid-area: footer;
+        }
+
+        .itemone {
+            background: hotpink;
+           
+        }
+
+        .itemtwo {
+            background:yellowgreen
+         
+        }
+
+        body {
+            font-size: 1.5em;
+            min-height: 550px;
+            width: 99%;
+            background: lightblue;
+            display: grid;
+
+            /*add columns*/
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px auto 1fr auto;
+            grid-gap: 5px;
+            grid-template-areas:
+                "header"
+                "advert"
+                "content"
+                "footer";
+        }
+
+        @media (min-width: 300px) {
+            body {
+                grid-template-columns:auto 1fr;
+                grid-template-rows: auto 1fr auto;
+     
+                grid-template-areas:
+                    "advert header"
+                    "advert content"
+                    "advert footer";
+            }
+        }
+
+        @media (min-width: 400px) {
+            body {              
+     
+                grid-template-areas:
+                    "header header"
+                    "advert content"
+                    "footer footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+   
+        <header class="item-1">header</header>
+        <nav class="item-2">advert</nav>
+        <main class="item-3">
+            <div class="itemone">Paragraph1</div>
+            <div class="itemtwo">Paragraph2</div>
+        </main>
+        <footer class="item-4">footer</footer>
+  
+
+</body>
+
+</html>
